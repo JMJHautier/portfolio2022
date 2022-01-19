@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.scss';
 import Nav from './components/Nav'
 import PickLanguage from './components/PickLanguage';
-import {hello} from './text/welcome'
-
+import Welcome from './components/Welcome';
 function App() {
   const storedLanguage = localStorage.getItem('language')
   const [language, setLanguage] = useState(storedLanguage)
@@ -14,7 +13,10 @@ function App() {
       </header>
       <div class="container">
         {language?
-        <h2> {hello[`${language}`]}</h2>
+        <>
+        <Welcome />
+        <Welcome />
+        </>
       :<PickLanguage setLanguage={setLanguage}/>}
 
       </div>

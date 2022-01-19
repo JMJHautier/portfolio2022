@@ -1,0 +1,52 @@
+@use "../../styles/vars";
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+  background-color: vars.$color-bg-main;
+  .pushUp {
+  }
+  .welcome__content {
+    width: 40%;
+    font-size: calc(60% + 2vmin);
+    & h2 {
+      font-size: calc(60% + 5vmin);
+    }
+  }
+  & .welcome__image {
+    position: relative;
+    width: 25%;
+    margin: clamp(1.5rem, 0.5vw, 2rem);
+    z-index: 1;
+    & img {
+      width: 100%;
+    }
+    &:hover {
+      transform: scale(0.95);
+      transition: transform 1s;
+    }
+  }
+  .welcome__image:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid vars.$color-objects;
+    top: clamp(0.5rem, 0.75vw, 1.5rem);
+    left: clamp(0.5rem, 0.75vw, 1.5rem);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+.welcome__image:hover:after {
+  background-color: vars.$color-objects;
+}

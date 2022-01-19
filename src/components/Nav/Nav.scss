@@ -5,11 +5,11 @@ nav {
   justify-content: space-between;
   width: 100%;
   padding: vars.$padding-small;
-  margin-bottom: vars.$margin;
   background-color: vars.$color-bg-dark;
   color: vars.$color-text-alt;
   font-size: 1.5rem;
   position: relative;
+  border-bottom: 4px solid vars.$color-objects;
 }
 
 .nav__right {
