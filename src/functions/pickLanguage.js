@@ -1,5 +1,4 @@
-import { useLocalStorage } from "../hooks/useStorage"
-export const pickLanguage = (event) => {
+export const pickLanguage = (event, setLanguage) => {
   
   const {id, value} = event.target
   const language = id || value
@@ -7,5 +6,6 @@ export const pickLanguage = (event) => {
   
   console.log({id})
   localStorage.setItem('language', language)
+  setLanguage(language)
 }
 

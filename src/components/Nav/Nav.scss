@@ -9,6 +9,7 @@ nav {
   background-color: vars.$color-bg-dark;
   color: vars.$color-text-alt;
   font-size: 1.5rem;
+  position: relative;
 }
 
 .nav__right {
@@ -16,5 +17,55 @@ nav {
   display: flex;
   & li {
     padding-left: vars.$padding-big;
+  }
+}
+
+.nav__right--desktop {
+  display: none;
+}
+.nav__right--mobile {
+  & .navMobile__burger {
+    top: 5%;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 vars.$padding-small;
+    z-index: 10;
+
+    & div {
+      width: 2rem;
+      height: 0.25rem;
+      background: white;
+      border-radius: 10px;
+      transition: all 0.3s linear;
+      position: relative;
+      transform-origin: 1px;
+    }
+  }
+  & .navMobile__SideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: vars.$color-bg-dark;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .nav__right--desktop {
+    list-style: none;
+    display: flex;
+    & li {
+      padding-left: vars.$padding-big;
+    }
+  }
+  .nav__right--mobile {
+    display: none;
   }
 }
