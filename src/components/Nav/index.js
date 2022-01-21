@@ -20,7 +20,7 @@ return <nav>
       <MenuItem isVisible={isVisible} />
     </div>
     <div className="nav__right--mobile">
-      <NavMobile />
+      <NavMobile isVisible={isVisible} />
     </div>
   </div>
 </nav>

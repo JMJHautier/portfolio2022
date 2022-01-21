@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react'
 
 const MenuItem = ({isVisible})=>{
   const language = localStorage.getItem("language")
-  const [current, setCurrent] = useState("home")
 
   const menuItems = useRef()
   const getStyle = (elementId) => {

@@ -1,13 +1,13 @@
 import useToggle from "../../hooks/useToggle"
 import MenuItem from "./MenuItems"
 
-const NavMobile = ()=>{
+const NavMobile = ({isVisible})=>{
   const [showSideBar, toggleSideBar ] = useToggle(false)
 
 return (showSideBar?
   <div className="navMobile__SideBar"> 
   <button onClick={toggleSideBar}>X</button>
-   <MenuItem />
+   <MenuItem isVisible={isVisible} />
   </div>
   :
         <button onClick={toggleSideBar} className="navMobile__burger">

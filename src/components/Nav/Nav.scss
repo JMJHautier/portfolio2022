@@ -7,6 +7,7 @@ header {
 }
 nav {
   display: flex;
+  position: relative;
   justify-content: space-between;
   width: 100%;
   padding: vars.$padding-small;
@@ -49,7 +50,7 @@ nav {
     padding: 0 vars.$padding-small;
     z-index: 10;
 
-    & button {
+    & div {
       width: 2rem;
       height: 0.25rem;
       background: white;
@@ -65,6 +66,16 @@ nav {
     right: 0;
     height: 100vh;
     background-color: vars.$color-bg-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    & button {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid grey;
+      color: white;
+    }
   }
 }
 
