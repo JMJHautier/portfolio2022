@@ -1,10 +1,14 @@
 @use "./styles/vars";
 
+section {
+}
 body {
   font-family: vars.$font;
   color: vars.$color-text;
 }
-
+.container {
+  position: relative;
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
