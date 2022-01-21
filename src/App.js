@@ -10,16 +10,16 @@ function App() {
   const [language, setLanguage] = useState(storedLanguage)
   const [isVisible, addObserver, ratio] = useIntersection()
   const section  = useRef([])
-
+  const steps = [0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
   useEffect(()=> {
-    section.current.map((sec)=> addObserver(sec,  [0, 0.25, 0.5, 0.75, 1]))
+    section.current.map((sec)=> addObserver(sec,  steps))
     console.log(isVisible)
   }, [])
 
   return (
     <div className="App">
       <header className="App-header">
-      <Nav setLanguage={setLanguage} isVisible={isVisible} />
+      <Nav setLanguage={setLanguage} isVisible={isVisible} ratio={ratio} />
       </header>
       <div id="container" class="container">
         {language?

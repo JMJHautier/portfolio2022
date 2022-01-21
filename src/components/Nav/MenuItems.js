@@ -2,25 +2,43 @@ import { home, about, projects, contact} from '../../text/nav'
 import classNames from 'classnames'
 import { useEffect, useRef, useState } from 'react'
 
-const MenuItem = ({isVisible})=>{
+const MenuItem = ({isVisible, ratio})=>{
   const language = localStorage.getItem("language")
 
   const menuItems = useRef()
+
+  useEffect(()=> {
+    const myitems = document.querySelectorAll(".nav__item")
+    console.log({myitems})
+
+    myitems.forEach((item)=> {
+      console.log("hi")
+      if(ratio[item.name] > 0.3) {
+      item.style.filter = `brightness(${ratio[item.name]})`
+      }
+      else {
+        item.style.filter = `brightness(100%)`
+        // item.classList
+
+      }
+    })
+  }, [ratio])
+
   const getStyle = (elementId) => {
     
     const itemStyle = classNames({
       nav__item: true,
-      "nav__item--active": isVisible[elementId]
+      "nav__item--active": isVisible[elementId] && ratio[elementId] >0.3
     })
 
     return itemStyle
   }
 
   
-return <><a href="#home" className={getStyle("home")} ref={(el)=> menuItems?.current?.push(el)}>{home[language]}</a>
-<a href="#about" className={getStyle("about")} ref={(el)=> menuItems?.current?.push(el)}>{about[language]}</a>
-<a href="#projects" className={getStyle("projects")} ref={(el)=> menuItems?.current?.push(el)}>{projects[language]}</a>
-<a href="#contact" className={getStyle("contact")} ref={(el)=> menuItems?.current?.push(el)}>{contact[language]}</a>
+return <><a href="#home" name="home" className={getStyle("home")} ref={(el)=> menuItems?.current?.push(el)}>{home[language]}</a>
+<a href="#about" name="about" className={getStyle("about")} ref={(el)=> menuItems?.current?.push(el)}>{about[language]}</a>
+<a href="#projects" name="projects" className={getStyle("projects")} ref={(el)=> menuItems?.current?.push(el)}>{projects[language]}</a>
+<a href="#contact" name="contact" className={getStyle("contact")} ref={(el)=> menuItems?.current?.push(el)}>{contact[language]}</a>
 </>
 }
 export default MenuItem

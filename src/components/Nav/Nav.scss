@@ -22,12 +22,14 @@ nav {
   & .nav__item {
     padding: 0 vars.$padding-big;
     background-color: transparent;
-    color: inherit;
+    color: white;
     border: none;
     text-decoration: none;
+    transition: filter 1s;
   }
   & .nav__item--active {
     color: vars.$color-text-important;
+    transition: color 0.5s;
   }
 }
 

@@ -4,7 +4,7 @@ import NavMobile from './NavMobile'
 import { useEffect, useState } from 'react'
 import MenuItem
  from './MenuItems'
-const Nav = ({setLanguage, isVisible})=>{
+const Nav = ({setLanguage, isVisible, ratio})=>{
   const language = localStorage.getItem('language')
 
 return <nav>
@@ -17,7 +17,7 @@ return <nav>
       </select>
     </div>
     <div className="nav__right--desktop">
-      <MenuItem isVisible={isVisible} />
+      <MenuItem isVisible={isVisible} ratio={ratio}/>
     </div>
     <div className="nav__right--mobile">
       <NavMobile isVisible={isVisible} />
