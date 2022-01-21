@@ -10,7 +10,7 @@ const Nav = ({setLanguage, isVisible})=>{
 return <nav>
   <div className="nav__left">Jean Hautier</div>
   <div className="nav__right">
-    <div className="nav__language"><select onChange={(event)=>handleSelect(event, setLanguage)}>
+    <div className="nav__language"><select value={language} onChange={(event)=>handleSelect(event, setLanguage)}>
       <option value="EN">English</option>
       <option value="DE">Deutsch</option>
       <option value="FR">Français</option>
