@@ -8,11 +8,11 @@ import useIntersection from './hooks/useIntersection';
 function App() {
   const storedLanguage = localStorage.getItem('language')
   const [language, setLanguage] = useState(storedLanguage)
-  const [isVisible, addObserver] = useIntersection()
+  const [isVisible, addObserver, ratio] = useIntersection()
   const section  = useRef([])
 
   useEffect(()=> {
-    section.current.map((sec)=> addObserver(sec, 0.7))
+    section.current.map((sec)=> addObserver(sec,  [0, 0.25, 0.5, 0.75, 1]))
     console.log(isVisible)
   }, [])
 

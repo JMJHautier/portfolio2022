@@ -20,7 +20,7 @@ nav {
 .nav__right {
   display: flex;
   & .nav__item {
-    padding-left: vars.$padding-big;
+    padding: 0 vars.$padding-big;
     background-color: transparent;
     color: inherit;
     border: none;
@@ -69,7 +69,9 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     flex-wrap: wrap;
+    padding: vars.$padding-small;
     & button {
       background-color: transparent;
       border: none;

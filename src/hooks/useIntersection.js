@@ -3,6 +3,7 @@ import { useState } from "react";
 const useIntersection = (element, threshold)=>{
 
   const [isVisible, setIsVisible] = useState({})
+  const [ratio, setRatio] = useState({})
 
   const observeElement = (element, threshold, rootMargin) => {
     
@@ -15,7 +16,10 @@ const useIntersection = (element, threshold)=>{
   const observer =
     new IntersectionObserver((entries, observer) => {
     entries.forEach(entry=> {
-  if(entry.isIntersecting) {
+      
+    setRatio((prevState => ({...prevState, [entry.target.id]: entry.intersectionRatio})))
+      
+    if(entry.isIntersecting) {
     setIsVisible((prevState)=>({...prevState, [entry.target.id]:true }))
     console.log(entry)
   }
@@ -30,6 +34,6 @@ const useIntersection = (element, threshold)=>{
   }
 
 
-return  [isVisible, observeElement]
+return  [isVisible, observeElement, ratio]
 }
 export default useIntersection

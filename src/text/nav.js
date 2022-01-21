@@ -7,7 +7,7 @@ export const home = {
 export const about = {
   FR: "A propos",
   EN: "About",
-  DE: "über"
+  DE: "Über"
 }
 
 export const projects = {
@@ -19,5 +19,5 @@ export const projects = {
 export const contact = {
   FR: "Contact",
   EN: "Contact",
-  DE: "Contact"
+  DE: "Kontact"
 }
