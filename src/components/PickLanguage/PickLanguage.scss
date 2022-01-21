@@ -1,0 +1,13 @@
+.PickLanguage__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  & button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+  }
+}
