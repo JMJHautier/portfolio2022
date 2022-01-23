@@ -1,6 +1,11 @@
 @use "./styles/vars";
 
 section {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: vars.$font;

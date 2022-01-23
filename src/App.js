@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.scss';
 import Nav from './components/Nav'
+import Next from './components/Next';
 import PickLanguage from './components/PickLanguage';
 import Welcome from './components/Welcome';
 import useIntersection from './hooks/useIntersection';
@@ -26,17 +27,28 @@ function App() {
         <>
         <section id="home" ref={(el) => section.current.push(el)}>
         <Welcome />
+        <Next section="#about"/>
           </section>
         <section id="about" ref={(el) => section.current.push(el)}>
+        <Next section="#home" up={true}/>
         <Welcome />
+        <Next section="#projects"/>
+
         </section>
 
         <section id="projects" ref={(el) => section.current.push(el)}>
+        <Next section="#about" up={true}/>
+
         <Welcome />
+        <Next section="#contact"/>
+
         </section>
 
         <section id="contact" ref={(el) => section.current.push(el)}>
+        <Next section="#projects" up={true}/>
         <Welcome />
+        <Next section="#home" up={true} style={{top:"80vh"}}/>
+
         </section>
         </>
       :<PickLanguage setLanguage={setLanguage}/>}
