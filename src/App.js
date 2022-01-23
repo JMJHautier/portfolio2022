@@ -4,7 +4,7 @@ import Nav from './components/Nav'
 import Next from './components/Next';
 import PickLanguage from './components/PickLanguage';
 import Welcome from './components/Welcome';
-import useIntersection from './hooks/useIntersection';
+import useIntersection from './hooks/useIntersection.ts';
 
 function App() {
   const storedLanguage = localStorage.getItem('language')

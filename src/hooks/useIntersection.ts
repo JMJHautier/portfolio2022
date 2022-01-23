@@ -1,14 +1,13 @@
 import { useState } from "react";
 
-const useIntersection = (element, threshold)=>{
+const useIntersection = (element:Element, threshold:number|number[], rootMargin?:string):[isVisible:object, observeElement:(any), ratio:object ]=>{
 
   const [isVisible, setIsVisible] = useState({})
   const [ratio, setRatio] = useState({})
 
-  const observeElement = (element, threshold, rootMargin) => {
+  const observeElement = (element:Element, threshold:number|number[], rootMargin?:string) => {
     
   const options = {
-
     threshold,
     rootMargin
     
