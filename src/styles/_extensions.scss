@@ -1,0 +1,23 @@
+@use "./vars";
+
+%underTitle {
+  content: "";
+  display: block;
+  height: 10px;
+  background-color: vars.$color-text;
+  width: 70%;
+  z-index: 500;
+  margin: auto;
+}
+
+%frame {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 2px solid vars.$color-objects;
+  top: clamp(0.5rem, 0.75vw, 1.5rem);
+  left: clamp(0.5rem, 0.75vw, 1.5rem);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

@@ -35,7 +35,7 @@ const MenuItem = ({isVisible, ratio})=>{
   }
 
   
-return <><a href="#home" name="home" className={getStyle("home")} ref={(el)=> menuItems?.current?.push(el)}>{home[language]}</a>
+return <><a href="#home" className={getStyle("home")} ref={(el)=> menuItems?.current?.push(el)}>{home[language]}</a>
 <a href="#about" name="about" className={getStyle("about")} ref={(el)=> menuItems?.current?.push(el)}>{about[language]}</a>
 <a href="#projects" name="projects" className={getStyle("projects")} ref={(el)=> menuItems?.current?.push(el)}>{projects[language]}</a>
 <a href="#contact" name="contact" className={getStyle("contact")} ref={(el)=> menuItems?.current?.push(el)}>{contact[language]}</a>

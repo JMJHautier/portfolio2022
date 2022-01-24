@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.scss';
+import AboutCarrier from './components/AboutCarrier';
 import Nav from './components/Nav'
 import Next from './components/Next';
 import PickLanguage from './components/PickLanguage';
@@ -31,7 +32,7 @@ function App() {
           </section>
         <section id="about" ref={(el) => section.current.push(el)}>
         <Next section="#home" up={true}/>
-        <Welcome />
+        <AboutCarrier />
         <Next section="#projects"/>
 
         </section>

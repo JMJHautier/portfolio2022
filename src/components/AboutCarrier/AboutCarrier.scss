@@ -1,0 +1,59 @@
+@use "../../styles/vars";
+@import "../../styles/extensions";
+
+.AboutCarrier {
+  background-color: vars.$color-bg-alt;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.AboutCarrier__container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: auto;
+  overflow: visible;
+
+  & .AboutCarrier__content {
+    font-size: vars.$fontSize-main;
+
+    width: clamp(200px, 40%, 80%);
+    // height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: vars.$padding-big;
+  }
+  & img {
+    width: clamp(400px, 40%, 80%);
+    flex-grow: 1;
+
+    max-height: 80%;
+    min-height: 500px;
+    display: block;
+    object-fit: contain;
+    &::after {
+      @extend %underTitle;
+    }
+  }
+}
+
+.sectionTitle {
+  color: vars.$color-text-alt;
+  padding: vars.$padding-small;
+  font-size: vars.$fontSize-title;
+  width: fit-content;
+  margin: auto;
+  &::after {
+    @extend %underTitle;
+  }
+}
+
+.yourpic::after {
+  @extend %frame;
+  z-index: -1;
+}
