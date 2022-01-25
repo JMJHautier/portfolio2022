@@ -1,12 +1,13 @@
 import './Nav.scss'
 import { pickLanguage as handleSelect } from '../../functions/pickLanguage'
 import NavMobile from './NavMobile'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import MenuItem
  from './MenuItems'
-const Nav = ({setLanguage, isVisible, ratio})=>{
-  const language = localStorage.getItem('language')
+import { LanguageContext } from '../../context/LanguageContext'
+const Nav = ({ isVisible, ratio})=>{
 
+  const {setLanguage, language} = useContext(LanguageContext)
 return <nav>
   <div className="nav__left">Jean Hautier</div>
   <div className="nav__right">

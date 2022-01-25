@@ -1,7 +1,11 @@
+import { useContext } from "react"
+import { LanguageContext } from "../../context/LanguageContext"
 import { pickLanguage as handleClick } from "../../functions/pickLanguage"
 import './PickLanguage.scss'
 
-const PickLanguage = ({setLanguage})=>{
+const PickLanguage = ()=>{
+
+const {setLanguage} = useContext(LanguageContext)
 
 return <div className="PickLanguage__container"> 
   <button onClick = {(event)=> handleClick(event, setLanguage)} id="EN">

@@ -1,6 +1,8 @@
+import SetTranslate from "./SetTranslate"
 
-export const hello = {
-  FR: "Bonjour!",
-  EN: "Hello!",
-  DE: "Guten Tag"
-}
+export const hello = (<SetTranslate>   
+{{FR: "Bonjour!",
+EN: "Hello!",
+DE: "Guten Tag"
+}} 
+</SetTranslate>)

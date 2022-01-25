@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {ChakraProvider} from '@chakra-ui/react'
+import LanguageState from './context/LanguageContext';
 
 ReactDOM.render(
   <React.StrictMode>
+    <LanguageState> 
     <ChakraProvider resetCSS={false}> 
       <App />
     </ChakraProvider>
+    </LanguageState>
   </React.StrictMode>,
   document.getElementById('root')
 );
