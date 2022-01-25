@@ -1,0 +1,14 @@
+@use "../../styles/vars";
+
+.importantColor {
+  color: vars.$color-text-important;
+  font-weight: 800;
+}
+
+.transparentButton {
+  background-color: transparent;
+  font-size: inherit;
+  // color: inherit;
+  border: none;
+  cursor: pointer;
+}
