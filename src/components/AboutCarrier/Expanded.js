@@ -11,9 +11,9 @@ return (<div className="AboutCarrier__extended">
       </div>
 
       <div className="AboutCarrier__extended__wrapper2"> 
-        <div className="AboutCarrier__extended__item">
+        <div className="AboutCarrier__extended__item2">
             <div className="extended__logo">
-              <img src="./pictures/unesco.png" alt="Logo of UNESCO" />
+              <img src="./pictures/logo_leadership_eftp.png" alt="Logo of Leadership Programme" />
             </div>
             <p>J’ai intégré l’UNESCO lors d’un stage, qui concluait mon master en Sciences politiques. Notre objectif: faciliter la collaboration internationale entre universités, centres de formations, ministères etc.
             </p>
