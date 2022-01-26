@@ -34,10 +34,13 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: vars.$padding-big;
+    // border-bottom: 1px solid grey;
+
     & p {
       padding-bottom: vars.$padding;
     }
   }
+
   & .AboutCarrier__picture {
     width: clamp(600px, 40%, 100%);
     flex-grow: 1;
@@ -70,4 +73,86 @@
   position: relative;
   min-height: 15vh;
   min-width: 100%;
+}
+
+.AboutCarrier__extended {
+  justify-self: center;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 5rem;
+  // border-left: 4px solid vars.$color-text;
+}
+
+.AboutCarrier__extended__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 90%;
+  height: fit-content;
+  border: solid vars.$color-text;
+  border-width: 0 0 4px 4px;
+  border-bottom-left-radius: 25px;
+  margin-bottom: vars.$padding-big;
+}
+.AboutCarrier__extended__item {
+  position: relative;
+  transform: translateY(50%);
+  justify-self: flex-start;
+  background-color: vars.$color-objects;
+  display: flex;
+  justify-content: space-between;
+  padding: vars.$padding-small;
+  color: vars.$color-text-alt;
+  width: 80%;
+  // height: clamp(5vh, 10vh, 100vh);
+  height: 10vh;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+    background-color: vars.$color-objects;
+  }
+  &::before {
+    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+  }
+  & .extended__logo {
+    width: clamp(100px, 30%, 20%);
+    height: clamp(5vh, 90%, 10vh);
+    z-index: 1;
+
+    & img {
+      width: 70%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  & p {
+    width: clamp(200px, 30%, 80%);
+    height: 100%;
+    flex-grow: 1;
+    z-index: 1;
+  }
+}
+
+.extraBorder {
+  border-bottom: 1px solid vars.$color-text;
+}
+
+.AboutCarrier__extended__wrapper2 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: fit-content;
+  border: solid vars.$color-text;
+  border-width: 0 4px 4px 0;
+  border-bottom-right-radius: 25px;
+  margin-bottom: vars.$padding-big;
 }
