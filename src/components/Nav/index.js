@@ -8,6 +8,7 @@ import { LanguageContext } from '../../context/LanguageContext'
 const Nav = ({ isVisible, ratio})=>{
 
   const {setLanguage, language} = useContext(LanguageContext)
+  
 return <nav>
   <div className="nav__left">Jean Hautier</div>
   <div className="nav__right">

@@ -16,14 +16,12 @@
 .AboutCarrier__container {
   width: 80%;
   min-height: 50vh;
-  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   margin: 0 auto;
-  overflow: visible;
+  // overflow: visible;
 
   & .AboutCarrier__content {
     font-size: vars.$fontSize-main;

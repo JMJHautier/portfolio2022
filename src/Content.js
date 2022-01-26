@@ -21,9 +21,9 @@ return (
   <Next section="#about"/>
     </section>
   <section id="about" ref={(el) => section.current.push(el)}>
-  <Next section="#home" up={true}/>
+  {/* <Next section="#home" up={true}/> */}
   <AboutCarrier />
-  <Next section="#projects"/>
+  {/* <Next section="#projects"/> */}
 
   </section>
 
