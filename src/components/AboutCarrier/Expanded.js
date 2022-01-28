@@ -1,36 +1,21 @@
-import { ExpandedItem1, ExpandedItem2,ExpandedItem3, ExpandedItem3a, ExpandedItem3b } from "../../text/aboutCarrier"
+import { ExpandedItem1, ExpandedItem2,ExpandedItem3, ExpandedItem3a, ExpandedItem3b, AllItem3 } from "../../text/aboutCarrier"
+import Bubble from "../Bubble/Bubble"
 const Expanded = ()=>{
-return (<div className="AboutCarrier__extended">
-      <div className="AboutCarrier__extended__wrapper"> 
-        <div className="AboutCarrier__extended__item">
-            <div className="extended__logo">
-              <img src="./pictures/unesco.png" alt="Logo of UNESCO" />
-            </div>
-            <p>{ExpandedItem1}
-            </p>
-        </div>
-      </div>
+  const expandedItem3 =`${ExpandedItem3} ${ExpandedItem3a} ${ExpandedItem3b}`
+  console.log(ExpandedItem2)
+  
+return ( 
+ <div className="AboutCarrier__extended">
 
+      <div className="AboutCarrier__extended__wrapper"> 
+        <Bubble picture="./pictures/unesco.png" text={ExpandedItem1} />
+      </div>
       <div className="AboutCarrier__extended__wrapper2"> 
-        <div className="AboutCarrier__extended__item2">
-            <div className="extended__logo">
-              <img src="./pictures/logo_leadership_eftp.png" alt="Logo of Leadership Programme" />
-            </div>
-            <p>{ExpandedItem2}
-            </p>
-        </div>
+        <Bubble picture='./pictures/logo_leadership_eftp.png' alt="Logo of Leadership Programme" text={ExpandedItem2} />
       </div>
 
-      <div className="AboutCarrier__extended__wrapper"> 
-        <div className="AboutCarrier__extended__item3">
-            <div className="extended__logo">
-              <img src="./pictures/logo-pp.png" alt="Logo of the Promising Practices Database" />
-            </div>
-            <p>{ExpandedItem3}
-            {ExpandedItem3a}
-            {ExpandedItem3b}
-            </p>
-        </div>
+      <div className="AboutCarrier__extended__wrapper3"> 
+        <Bubble picture="./pictures/logo-pp.png" alt='extended__logo' text={AllItem3} />
       </div>
 
 

@@ -26,7 +26,7 @@ DE:'',
 
 export const ExpandedItem3 = (<SetTranslate>
 {{
-FR:"J’ai aussi, en collaboration avec des développeurs, réalisé des services webs!",
+FR:"J’ai aussi, en collaboration avec des développeurs, réalisé des services webs!  \n",
 EN:'',
 DE:'',
 }}
@@ -34,7 +34,7 @@ DE:'',
 
 export const ExpandedItem3a = (<SetTranslate>
 {{
-FR:'&#707;**Deux bases de données:** une de pratiques prometteuses, une autre de terminologie internationale',
+FR:"&#707;**Deux bases de données:** une de pratiques prometteuses, une autre de terminologie internationale  \n",
 EN:'',
 DE:'',
 }}
@@ -43,6 +43,14 @@ DE:'',
 export const ExpandedItem3b = (<SetTranslate>
 {{
 FR:'&#707;**une plateforme de Networking**, pour 200 institutions de 150 pays différents!',
+EN:'',
+DE:'',
+}}
+</SetTranslate>)
+
+export const AllItem3 = (<SetTranslate>
+{{
+FR: ExpandedItem3.props.children.FR + ExpandedItem3a.props.children.FR + ExpandedItem3b.props.children.FR,
 EN:'',
 DE:'',
 }}
