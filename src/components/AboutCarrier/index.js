@@ -37,13 +37,10 @@ return (
       </div>
 
     </div>
-    {toggled&&
-          <CSSTransition in={toggled}
-          transitionName="example" transitionEnterTimeout={500}  classNames="example" transitionLeaveTimeout={300}>
+    <CSSTransition in={toggled} timeout={200} classNames="my-node" unmountOnExit>
+        <Expanded toggled={toggled}/>
+    </CSSTransition> 
 
-        <Expanded />
-        </CSSTransition>
-      }
     {/* <div className="pushUp"></div> */}
   </div>
 )

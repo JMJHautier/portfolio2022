@@ -79,6 +79,7 @@
   justify-self: center;
   align-items: center;
   width: 70%;
+  min-height: 100vh;
   margin-bottom: 5rem;
   // border-left: 4px solid vars.$color-text;
 }
@@ -92,7 +93,7 @@
   border: solid vars.$color-text;
   border-width: 0 0 4px 4px;
   border-bottom-left-radius: 25px;
-  margin-bottom: vars.$padding-big;
+  margin-bottom: 10vh;
 }
 
 .AboutCarrier__extended__wrapper2 {
@@ -103,7 +104,7 @@
   border: solid vars.$color-text;
   border-width: 0 4px 4px 0;
   border-bottom-right-radius: 25px;
-  margin-bottom: vars.$padding-big;
+  margin-bottom: 10vh;
 
   & .bubbleItem {
     color: vars.$color-text;
@@ -132,16 +133,49 @@
     }
   }
 }
-.example-enter {
+
+:root {
+  --wrapper-animation: 800ms;
+  --bubble-animation: 800s;
+}
+.bubble-enter {
   opacity: 0;
-  transform: scale(0.9);
+}
+.bubble-enter-active {
+  opacity: 1;
+  transition: opacity var(--bubble-animation) calc(var(--wrapper-animation) * 3);
+  &1 {
+    opacity: 1;
+    transition: opacity var(--bubble-animation)
+      calc(var(--wrapper-animation) * 3 + var(--bubble-animation) / 2);
+  }
+  &2 {
+    opacity: 1;
+    transition: opacity var(--bubble-animation)
+      calc(var(--wrapper-animation) * 3 + var(--bubble-animation));
+  }
 }
 
-.example-enter-active {
+.bubble-exit {
   opacity: 1;
-  transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
 }
-.example-exit {
+.bubble-exit-active {
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+.wrapper-enter {
+  opacity: 0;
+}
+.wrapper-enter-active {
   opacity: 1;
+  transition: opacity var(--wrapper-animation) &1 {
+    opacity: 1;
+    transition: opacity var(--wrapper-animation) var(--wrapper-animation);
+  }
+  &2 {
+    opacity: 1;
+    transition: opacity var(--wrapper-animation)
+      calc(var(--wrapper-animation) * 2);
+  }
 }
