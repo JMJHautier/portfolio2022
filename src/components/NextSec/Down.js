@@ -1,31 +1,33 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown} from '@fortawesome/free-solid-svg-icons'
 
 import './NextSec.scss'
 import { useEffect, useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
 
 
-const Up = ({ratio, currentSection})=>{
+const Down = ({ratio, currentSection})=>{
 const [nextSection, setNextSection] = useState("home")
 const path = `#${nextSection}`
 useEffect(()=>{
   switch(currentSection) {
+    case "home": 
+      setNextSection("about")
+    
+    break;
     case "about": 
-      setNextSection("home")
+      setNextSection("projects")
     break;
     case "projects": 
-      setNextSection("about")
-      break;
-    case "contact": 
-      setNextSection("projects")
+      setNextSection("contact")
+    
     break;
     default:
       setNextSection("home")
   }
 }, [currentSection])
 
-return <div className="upIcon"><HashLink to={path}> <FontAwesomeIcon icon={faAngleUp} size="4x"/></HashLink></div>
+return <div className="downIcon"><HashLink to={path}> <FontAwesomeIcon icon={faAngleDown} size="4x"/></HashLink></div>
 
 }
-export default Up
+export default Down

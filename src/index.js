@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import {ChakraProvider} from '@chakra-ui/react'
 import LanguageState from './context/LanguageContext';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
     <LanguageState> 
-    <ChakraProvider resetCSS={false}> 
-      <App />
-    </ChakraProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </LanguageState>
   </React.StrictMode>,
   document.getElementById('root')

@@ -10,6 +10,7 @@ html {
 body {
   font-family: vars.$font;
   color: vars.$color-text;
+  position: relative;
 }
 .container {
   position: relative;
