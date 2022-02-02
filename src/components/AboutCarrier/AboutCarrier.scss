@@ -135,8 +135,8 @@
 }
 
 :root {
-  --wrapper-animation: 800ms;
-  --bubble-animation: 800s;
+  --wrapper-animation: 0ms;
+  --bubble-animation: 800ms;
 }
 .bubble-enter {
   opacity: 0;
@@ -178,4 +178,8 @@
     transition: opacity var(--wrapper-animation)
       calc(var(--wrapper-animation) * 2);
   }
+}
+
+.hide {
+  display: none;
 }

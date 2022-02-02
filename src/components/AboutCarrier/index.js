@@ -4,7 +4,7 @@ import { content } from "../../text/aboutCarrier"
 import TransparentButton from "../Buttons/Transparent"
 import './AboutCarrier.scss'
 import Expanded from "./Expanded"
-import { CSSTransition } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const AboutCarrier = ()=>{
   const [toggled, setToggle] = useToggle(false)
@@ -37,10 +37,7 @@ return (
       </div>
 
     </div>
-    <CSSTransition in={toggled} timeout={200} classNames="my-node" unmountOnExit>
         <Expanded toggled={toggled}/>
-    </CSSTransition> 
-
     {/* <div className="pushUp"></div> */}
   </div>
 )
