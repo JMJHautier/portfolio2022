@@ -6,7 +6,7 @@ import Down from './components/NextSec/Down';
 import Up from './components/NextSec/Up';
 import Welcome from './components/Welcome';
 
-const Content = ({isVisible, addObserver, ratio, currentSection})=>{
+const Content = ({isVisible, boundY, addObserver, ratio, currentSection})=>{
 
   const section  = useRef([])
   const sectionIndex = useState(0)
@@ -33,8 +33,9 @@ return (
   <section id="contact" ref={(el) => section.current.push(el)}>
   <Welcome />
   </section>
+  {!isVisible["home"]&&<Up section={section} boundY={boundY} ratio={ratio} currentSection={currentSection}/>}
+
   <Down section={section} ratio={ratio} currentSection={currentSection}/>
-  {!isVisible["home"]&&<Up section={section} ratio={ratio} currentSection={currentSection}/>}
   </>
 )
 }
