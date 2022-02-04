@@ -4,6 +4,7 @@ import AboutCarrier from './components/AboutCarrier';
 import Next from './components/Next';
 import Down from './components/NextSec/Down';
 import Up from './components/NextSec/Up';
+import Project from './components/Project';
 import Welcome from './components/Welcome';
 
 const Content = ({isVisible, boundY, addObserver, ratio, currentSection})=>{
@@ -27,7 +28,7 @@ return (
   </section>
 
   <section id="projects" ref={(el) => section.current.push(el)}>
-  <Welcome />
+  <Project />
   </section>
 
   <section id="contact" ref={(el) => section.current.push(el)}>
