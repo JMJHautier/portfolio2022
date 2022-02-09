@@ -1,0 +1,41 @@
+@use "../../styles/vars";
+@import "../../styles/extensions";
+
+#projects {
+  @extend %body;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: vars.$color-bg-alt;
+}
+.projects {
+  @extend %container;
+  flex-direction: column;
+  & h2 {
+    justify-self: center;
+  }
+}
+.projects__tabs {
+  display: flex;
+  justify-content: flex-start;
+
+  & button {
+    background-color: transparent;
+    border-bottom: none;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-color: transparent;
+    background-color: inherit;
+    color: grey;
+    margin: vars.$padding-big;
+    margin-bottom: 0px;
+    font-size: calc(vars.$fontSize-title / 2);
+  }
+}
+.projects .projects__tabs .projects__tabs--active {
+  color: vars.$color-text-important;
+  background-color: vars.$color-bg-main;
+}

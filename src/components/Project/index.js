@@ -4,16 +4,11 @@ import TabSystem from "./TabSystem"
 import './Project.scss'
 import { CSSTransition } from "react-transition-group"
 
-const Project = ()=>{
-  const projectTitle = "memoria"
+const Project = ({tabs, projectTitle})=>{
   const [transitionIsReset, setTransitionIsReset] = useState(true)
-  const tab1 = {title:"tab1", content:"content1", pic:`./pictures/${projectTitle}/section1.png` }
-  const tab2 = {title:"tab2", content:"content2", pic:`./pictures/${projectTitle}/section2.png`}
-  const tab3 = {title:"tab3", content:"content3", pic:`./pictures/${projectTitle}/section3.png`}
-  const tab4 = {title:"tab4", content:"content4", pic:`./pictures/${projectTitle}/section4.png`}
 
+  const [tab1, tab2, tab3, tab4] = tabs
   const [activeTab, setActiveTab] = useState(tab1)
-  const allTabs = [tab1, tab2, tab3, tab4]
   const [inactiveTabs, setInactiveTabs] = useState([tab2, tab3, tab4])
   useEffect(()=> {
     setTransitionIsReset(false)
