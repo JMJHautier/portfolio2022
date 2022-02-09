@@ -1,0 +1,60 @@
+@use "../../styles/vars";
+@import "../../styles/extensions";
+
+#contact {
+  @extend %body;
+  z-index: 8;
+}
+
+.contact__container {
+  @extend %container;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact__content {
+  @extend %content;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  & form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > div {
+      display: flex;
+      align-items: flex-start;
+      @media only screen and (max-width: 600px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    }
+    & label {
+      width: clamp(50px, 200px, 500px);
+    }
+    & input,
+    textarea {
+      width: clamp(200px, 400px, 500px);
+      border-radius: 15px;
+      border: none;
+      filter: drop-shadow(0 0 0.25rem black);
+      margin: vars.$padding-small;
+    }
+
+    & input[type="submit"] {
+      background-color: vars.$color-bg-alt;
+      color: vars.$color-text-alt;
+      filter: none;
+      transition: background-color 0.8s, filter 0.8s;
+
+      padding: vars.$padding-small;
+      margin: 5rem;
+
+      &:hover {
+        background-color: vars.$color-objects;
+        filter: drop-shadow(0 0 0.25rem black);
+      }
+    }
+  }
+}

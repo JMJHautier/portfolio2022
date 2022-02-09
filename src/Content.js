@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.scss';
 import AboutCarrier from './components/AboutCarrier';
+import Contact from './components/Contact';
 import Next from './components/Next';
 import Down from './components/NextSec/Down';
 import Up from './components/NextSec/Up';
@@ -32,7 +33,7 @@ return (
   </section>
 
   <section id="contact" ref={(el) => section.current.push(el)}>
-  <Welcome />
+  <Contact />
   </section>
   {!isVisible["home"]&&<Up section={section} boundY={boundY} ratio={ratio} currentSection={currentSection}/>}
 
