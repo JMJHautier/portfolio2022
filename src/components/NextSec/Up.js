@@ -33,8 +33,11 @@ useEffect(()=>{
     case "about": 
       setNextSection("home")
     break;
+    case "about2": 
+    setNextSection("about")
+  break;
     case "projects": 
-      setNextSection("about")
+      setNextSection("about2")
       break;
     case "contact": 
       setNextSection("projects")

@@ -21,16 +21,9 @@ return (
     <div className="AboutCarrier__container">
       <div className={contentClass}>
         <p>{content}</p>
-        {toggled?
           <TransparentButton onClick={setToggle} className="importantColor">
-          retour
+          {toggled?"retour":"Envie d'en savoir plus?"}
           </TransparentButton>
-         
-        :<TransparentButton onClick={setToggle} className="importantColor">
-          Envie d'en savoir plus?
-        </TransparentButton>
-        
-}
       </div>
       <div className="AboutCarrier__picture"> 
         <img src="./pictures/AboutCarrier_short.jpg" alt="Wideshot of a UN meeting"/>

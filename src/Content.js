@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.scss';
 import AboutCarrier from './components/AboutCarrier';
+import AboutReconversion from './components/AboutReconversion';
 import Contact from './components/Contact';
 import Next from './components/Next';
 import Down from './components/NextSec/Down';
@@ -27,6 +28,9 @@ return (
     </section>
   <section id="about" ref={(el) => section.current.push(el)}>
   <AboutCarrier />
+    <section id="about2" ref={(el) => section.current.push(el)}>
+      <AboutReconversion />
+    </section>
   </section>
 
   <section id="projects" ref={(el) => section.current.push(el)}>

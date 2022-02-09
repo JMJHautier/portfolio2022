@@ -1,0 +1,29 @@
+@use "../../styles/vars";
+@import "../../styles/extensions";
+
+.AboutReconversion {
+  @extend %body;
+  & h2 {
+    @extend %sectionTitle-grey;
+    &::after {
+      @extend %underTitle-blue;
+    }
+  }
+}
+
+.AboutReconversion__container {
+  @extend %container;
+}
+
+.AboutReconversion__content {
+  @extend %content;
+}
+
+.AboutReconversion__picture {
+  @extend %picture;
+
+  &::after {
+    @extend %frame-blue;
+    @extend %frame-right;
+  }
+}

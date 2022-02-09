@@ -13,15 +13,20 @@ useEffect(()=>{
   switch(currentSection) {
     case "home": 
       setNextSection("about")
-    
     break;
+
     case "about": 
-      setNextSection("projects")
+      setNextSection("about2")
     break;
+
+    case "about2": 
+    setNextSection("projects")
+    break;
+
     case "projects": 
       setNextSection("contact")
-    
     break;
+
     default:
       setNextSection("home")
   }

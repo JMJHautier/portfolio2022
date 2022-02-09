@@ -1,6 +1,22 @@
 @use "./vars";
 
-%underTitle {
+%sectionTitle,
+%sectionTitle-grey {
+  position: relative;
+  height: 15vh;
+  color: vars.$color-text-alt;
+  color: vars.$color-text-important;
+  padding: vars.$padding-small;
+  font-size: vars.$fontSize-title;
+  width: fit-content;
+}
+
+%sectionTitle-grey {
+  color: vars.$color-text;
+}
+
+%underTitle,
+%underTitle-blue {
   content: "";
   display: block;
   height: 10px;
@@ -10,7 +26,12 @@
   margin: auto;
 }
 
-%frame {
+%underTitle-blue {
+  background-color: vars.$color-objects;
+}
+
+%frame,
+%frame-blue {
   content: "";
   display: block;
   position: absolute;
@@ -20,6 +41,15 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+%frame-blue {
+  border: 2px solid vars.$color-objects;
+}
+
+%frame-right {
+  left: auto;
+  right: clamp(0.5rem, 0.75vw, 1.5rem);
 }
 
 %body {
