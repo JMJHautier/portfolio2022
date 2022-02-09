@@ -1,0 +1,45 @@
+@import "../../styles/extensions";
+
+.project {
+  @extend %body;
+  justify-content: flex-start;
+}
+
+.project__container {
+  @extend %container;
+  min-height: 100%;
+  justify-content: flex-start;
+  padding: 0;
+}
+.project__left-side {
+  @extend %picture;
+
+  & .project__illustration {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.project__right-side {
+  @extend %content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.illustration-enter {
+  opacity: 0;
+}
+.illustration-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.illustration-exit {
+  opacity: 1;
+}
+.illustration-exit-active {
+  opacity: 0;
+  transition: opacity 100ms;
+}
