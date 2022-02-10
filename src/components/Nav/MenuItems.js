@@ -12,9 +12,19 @@ const MenuItem = ({isVisible, ratio})=>{
     console.log({myitems})
 
     myitems.forEach((item)=> {
-      console.log("hi")
+      
+      const myItem = Object.fromEntries(Object.entries(isVisible).filter(([key, value]) => value))
+      const myRealItem = Object.fromEntries(Object.entries(myItem).filter(([key, value]) => key !== "about2"))
+      console.log({myRealItem})
+
       if(ratio[item.name] > 0.3) {
+        if(myItem[item.name]&& Object.keys(myRealItem).length === 1)
+        {
+          item.style.filter = 'brightness(1)'
+        }
+        else {
       item.style.filter = `brightness(${ratio[item.name]})`
+        }
       }
       else {
         item.style.filter = `brightness(100%)`

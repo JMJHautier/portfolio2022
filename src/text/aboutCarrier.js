@@ -3,14 +3,14 @@ import SetTranslate from "./SetTranslate";
 export const content = (<SetTranslate>   
   {{
   FR: "Le développement est ma deuxième carrière! \n\nDe 2015 à 2021, j’ai travaillé pour **l’UNESCO**, où j’organisais des conférences et coordonnaient des publications et *ressources en ligne.* \n\n J’y ai acquis des compétences interpersonnelles, et une nouvelle passion: le dévelopement web!", 
-  EN:"Le développement est ma deuxième carrière! \n\nde 2015 à 2021, j’ai travaillé pour l’UNESCO, où j’organisais des conférences et coordonnaient des publications et ressources en ligne. \n\n J’y ai acquis des compétences interpersonnelles, et une nouvelle passion: le dévelopement web!",
+  EN:"Le développement est ma deuxième carrière! \n\nDe 2015 à 2021, j’ai travaillé pour l’UNESCO, où j’organisais des conférences et coordonnaient des publications et ressources en ligne. \n\n J’y ai acquis des compétences interpersonnelles, et une nouvelle passion: le dévelopement web!",
   DE:"Le développement est ma deuxième carrière! \n\nde 2015 à 2021, j’ai travaillé pour l’UNESCO, où j’organisais des conférences et coordonnaient des publications et ressources en ligne. \n\n J’y ai acquis des compétences interpersonnelles, et une nouvelle passion: le dévelopement web!"
 }}
 </SetTranslate>)
 
 export const ExpandedItem1 = (<SetTranslate>
 {{
-FR:'J’ai intégré l’UNESCO lors d’un stage, qui concluait mon master en Sciences politiques. Notre objectif: faciliter la collaboration internationale entre universités, centres de formations, ministères etc.',
+FR:'J’ai intégré l’UNESCO lors d’un stage, qui concluait mon master en Sciences politiques. Notre objectif: **faciliter la collaboration internationale** entre universités, centres de formations, ministères etc.',
 EN:'',
 DE:'',
 }}
@@ -18,7 +18,7 @@ DE:'',
 
 export const ExpandedItem2 = (<SetTranslate>
 {{
-FR:'Lors de ces 6 ans, j’ai organisé des ateliers de leadership à 100 hauts fonctionnaires de plus de 50 pays. Beaucoup ont par la suite travaillé ensemble sur des projets lié au dévelopement durable, à l’égalité des chances etc.',
+FR:"J'organisais des ateliers de leadership et de networking pour des hauts fonctionnaires, des chercheurs, des chefs d'établissement, et les aidais à travailler ensemble sur des projets liés au dévelopement durable, à l’égalité des chances etc.",
 EN:'',
 DE:'',
 }}
@@ -26,7 +26,7 @@ DE:'',
 
 export const ExpandedItem3 = (<SetTranslate>
 {{
-FR:"J’ai aussi, en collaboration avec des développeurs, réalisé des services webs!  \n",
+FR:"J’ai aussi, en collaboration avec des développeurs, conçu des services webs!   \n",
 EN:'',
 DE:'',
 }}
@@ -34,7 +34,7 @@ DE:'',
 
 export const ExpandedItem3a = (<SetTranslate>
 {{
-FR:"&#707;**Deux bases de données:** une de pratiques prometteuses, une autre de terminologie internationale  \n",
+FR:"&#707;**Deux bases de données:** une compilant des pratiques prometteuses, une autre de terminologie internationale  \n",
 EN:'',
 DE:'',
 }}
