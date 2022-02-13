@@ -5,8 +5,14 @@ import useToggle from '../../hooks/useToggle'
 import './Project.scss'
 import { CSSTransition } from "react-transition-group"
 import TransparentButton from "../Buttons/Transparent"
+import * as presentation from "../../text/projects/presentation.js"
 
 const Project = ({tabs, projectTitle})=>{
+  console.log(presentation["memoria"])
+  console.log(projectTitle)
+  const cleantTitle = projectTitle.toLowerCase().replace("'", "").replace(" ", "") 
+  console.log({cleantTitle, presentation})
+  const presentationContent = presentation[cleantTitle]
   const [transitionIsReset, setTransitionIsReset] = useState(true)
   const homePic = "./pictures/memoria/Home-project.png"
   const [toggled, switchToggle] = useToggle(false)
@@ -35,7 +41,7 @@ return <div className="project">
       <CSSTransition in={!toggled} timeout={800} classNames={{enter:"illustration-enter", enterActive:"illustration-enter-active", exit:"illustration-exit", exitActive:"illustration-exit-active"}} unmountOnExit>
 
         <div> 
-          my content 
+          {presentationContent}
           <TransparentButton onClick={switchToggle}>En savoir plus</TransparentButton>
           </div> 
           </CSSTransition>
