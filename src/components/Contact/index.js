@@ -1,4 +1,4 @@
-import { title, name, email, message } from '../../text/contact'
+import { title, content, name, email, message } from '../../text/contact'
 import { send } from '../../text/buttons'
 import './Contact.scss'
 
@@ -8,6 +8,7 @@ event.preventDefault()
   }
 return (<div className="contact__container">
     <h2 className="sectionTitle">{title}</h2>
+    <div>{content}</div>
   <div className="contact__content"> 
   <form onSubmit={handleSubmit} action="https://public.herotofu.com/v1/77b78dd0-89a5-11ec-9849-fb4467695b96" method="post">
 <div>
