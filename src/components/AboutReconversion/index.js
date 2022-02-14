@@ -1,9 +1,10 @@
 import classNames from "classnames"
 import useToggle from "../../hooks/useToggle"
-import { content } from "../../text/aboutCarrier"
 import TransparentButton from "../Buttons/Transparent"
 import './AboutReconversion.scss'
 import Expanded from "./Expanded"
+import {title, content} from "../../text/aboutReconversion"
+import { back, learnMore } from "../../text/buttons"
 
 const AboutReconversion = ()=>{
 const [toggled, setToggle] = useToggle(false)
@@ -14,7 +15,7 @@ const contentClass = classNames({
 return (
 <div className="AboutReconversion">
   <h2 className="sectionTitle">
-    My first Career
+    {title}
   </h2>
 
   <div className="AboutReconversion__container">
@@ -25,7 +26,7 @@ return (
     <div className={contentClass}>
       <p>{content}</p>
         <TransparentButton onClick={setToggle} className="importantColor">
-        {toggled?"retour":"Envie d'en savoir plus?"}
+        {toggled?back:learnMore}
         </TransparentButton>
     </div>
   </div>

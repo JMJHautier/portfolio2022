@@ -1,4 +1,4 @@
-import { ExpandedItem1, ExpandedItem2,ExpandedItem3, ExpandedItem3a, ExpandedItem3b, AllItem3 } from "../../text/aboutCarrier"
+import { conclusion, ExpandedItem1, ExpandedItem2,ExpandedItem3, ExpandedItem3a, ExpandedItem3b, AllItem3 } from "../../text/aboutCarrier"
 import Bubble from "../Bubble/Bubble"
 import { CSSTransition} from "react-transition-group"
 import {useEffect, useRef} from 'react'
@@ -40,7 +40,7 @@ return (
   </div>
     </CSSTransition>
 {/* </CSSTransition> */}
-
+  <p>{conclusion}</p>
     </div>
 )
 }

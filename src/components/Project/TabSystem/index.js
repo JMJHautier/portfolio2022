@@ -15,7 +15,7 @@ const TabSystem = ({activeTab, setActiveTab, tabs, setTabs, transitionIsReset})=
 
   useEffect(()=> {
     const filterTab = tabs.filter((tab) => {
-      if(tab.title == activeTab.title) {
+      if(tab.title === activeTab.title) {
         return false
       }
       else {

@@ -39,3 +39,12 @@
   color: vars.$color-text-important;
   background-color: vars.$color-bg-main;
 }
+img[alt="Github"] {
+  width: 40px;
+}
+
+.projects__intro {
+  @extend %content;
+  width: 100%;
+  text-align: center;
+}
