@@ -4,6 +4,7 @@ import ActiveTab from "./ActiveTab"
 import Tabs from "./Tabs"
 
 const TabSystem = ({activeTab, setActiveTab, tabs, setTabs, transitionIsReset})=>{
+
   const previousActiveTab = usePrevious(activeTab)
   const handleChangeTab = (event) => {
     const idNewTab = event.currentTarget.id

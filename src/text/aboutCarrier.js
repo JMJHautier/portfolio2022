@@ -45,15 +45,15 @@ export const ExpandedItem3a = (<SetTranslate>
 {{
 FR:`&#707;**Deux bases de données:** une compilant des [pratiques prometteuses](https://unevoc.unesco.org/home/Promising+Practices+in+TVET), une autre de [termes utilisés à l’international]( https://unevoc.unesco.org/home/TVETipedia+Glossary).  \n`,
 EN:`&#707;**Two databases**: one presenting [Promising Practices](https://unevoc.unesco.org/home/Promising+Practices+in+TVET),  and a second [summarising the international terminology](https://unevoc.unesco.org/home/TVETipedia+Glossary) of the education sector to provide a common language for supranational communication.   \n`,
-DE:`&#707;**Zwei Datenbanken**: eine, in der [Promising Practices](https://unevoc.unesco.org/home/Promising+Practices+in+TVET) vorgestellt werden, und eine zweite, in der die internationale Terminologie des Bildungssektors zusammengefasst ist, um eine Grundlage für gemeinsame überstaatliche Kommunikation zu schaffen.  \n`,
+DE:`&#707;**Zwei Datenbanken**: eine, in der [Promising Practices](https://unevoc.unesco.org/home/Promising+Practices+in+TVET) vorgestellt werden, und eine zweite, in der die [internationale Terminologie des Bildungssektors](https://unevoc.unesco.org/home/TVETipedia+Glossary) zusammengefasst ist, um eine Grundlage für gemeinsame überstaatliche Kommunikation zu schaffen.  \n`,
 }}
 </SetTranslate>)
 
 export const ExpandedItem3b = (<SetTranslate>
 {{
-FR:`'&#707;**[une plateforme de Networking](https://unevoc.unesco.org/network/Dashboard_Video_Guide.mp4)**, pour 200 institutions de 150 pays différents!`,
-EN:`'&#707; **a [networking platform](https://unevoc.unesco.org/network/Dashboard_Video_Guide.mp4)** for 200 institutions from 150 different countries.`,
-DE:`'&#707; **eine [Networking-Plattform](https://unevoc.unesco.org/home/TVETipedia+Glossary)** für 200 Institutionen aus 150 verschiedenen Ländern.`,
+FR:`&#707;**[une plateforme de Networking](https://unevoc.unesco.org/network/Dashboard_Video_Guide.mp4)**, pour 200 institutions de 150 pays différents!`,
+EN:`&#707; **a [networking platform](https://unevoc.unesco.org/network/Dashboard_Video_Guide.mp4)** for 200 institutions from 150 different countries.`,
+DE:`&#707; **eine [Networking-Plattform](https://unevoc.unesco.org/network/Dashboard_Video_Guide.mp4)** für 200 Institutionen aus 150 verschiedenen Ländern.`,
 }}
 </SetTranslate>)
 

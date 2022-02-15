@@ -7,8 +7,10 @@ import { CSSTransition } from "react-transition-group"
 import TransparentButton from "../Buttons/Transparent"
 import * as presentation from "../../text/projects/presentation/index.js"
 import {back, learnMore} from "../../text/buttons"
+
 const Project = ({tabs, projectTitle})=>{
 
+  
   const cleantTitle = projectTitle.toLowerCase().replace("'", "").replace(" ", "") 
   const presentationContent = presentation[cleantTitle]
   const [transitionIsReset, setTransitionIsReset] = useState(true)

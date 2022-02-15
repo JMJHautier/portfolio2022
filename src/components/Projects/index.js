@@ -3,8 +3,14 @@ import Project from "../Project"
 import './Projects.scss'
 import * as tabs from '../../text/projects/slides/'
 import { content, title } from "../../text/projects"
+import { useContext } from "react"
+import { LanguageContext } from "../../context/LanguageContext"
 
 const Projects = ()=>{
+
+
+    const {setLanguage, language} = useContext(LanguageContext)
+
   const [projectTitle, setProjectTitle] = useState("memOria")
   const [projectTabs, setProjectTabs] = useState(Object.values(tabs["memoria"]))
 
@@ -14,7 +20,7 @@ const Projects = ()=>{
     const tabsInArray = Object.values(tabs[cleantTitle])
     setProjectTabs(tabsInArray)
     // setProjectTabs(Object.values(tabs["whatsthat"]))
-  }, [projectTitle])
+  }, [projectTitle, language])
 
   const projects = ["memOria", "What's that"]
   const tabsInArray = Object.values(projectTabs)
