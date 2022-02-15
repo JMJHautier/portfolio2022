@@ -10,7 +10,7 @@ DE:`Erste berufliche Laufbahn`,
 export const content = (<SetTranslate>   
   {{
   FR: `Le développement est ma deuxième carrière ! \n\n J’ai d’abord obtenu un master en Scienes politiques, puis, de e 2015 à 2021, travaillé pour **l’UNESCO**. J’organisais des conférences et coordonnaient des publications et *ressources en ligne.*, qui m’ont donné envie de me reconvertir dans le développement web!`, 
-  EN:`Web development is my second career choice: I first completed a Master’s degree in Political Sciences then worked for UNESCO from 2015 to 2021. I was organising conferences and coordinating publications and online resources – the latter motivating me to retrain in web development!`,
+  EN:`Web development is my second career choice: I first completed a Master’s degree in Political Sciences then worked for UNESCO from 2015 to 2021.  \n I was organising conferences and coordinating publications and online resources – the latter motivating me to retrain in web development!`,
   DE:`Die Web-Entwicklung ist meine zweite berufliche Laufbahn: Ich habe meinen Master in den Politikwissenschaften an der Universität Science Po Toulouse gemacht.  \n 
   Anschließend habe ich von 2015 bis 2021 für UNESCO gearbeitet, wo ich Konferenzen organisiert und Veröffentlichungen sowie Online-Ressourcen koordiniert habe - Diese haben mich motiviert, in die Webentwicklung einzusteigen.
   `

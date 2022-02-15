@@ -11,19 +11,27 @@
   padding: vars.$padding-small;
   color: vars.$color-text-alt;
   box-shadow: 0 5px 10px black;
-
   width: 80%;
   // height: clamp(5vh, 10vh, 100vh);
   height: 20vh;
   font-size: calc(60% + 1vmin);
+  z-index: 100;
 
   @media screen and (max-width: 1300px) {
     font-size: calc(25% + 1vmin);
     height: 14vh;
   }
-  @media screen and (max-width: 481px) {
+  @media screen and (max-width: 900px) {
+    font-size: calc(25% + 1vmin);
+    height: 16vh;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: calc(22% + 1vmin);
+    height: 17vh;
+  }
+  @media screen and (max-width: 700px) {
     font-size: calc(20% + 1vmin);
-    height: 18vh;
+    height: 25vh;
   }
 
   &::after,
@@ -60,7 +68,7 @@
     }
   }
   & p {
-    width: clamp(200px, 30%, 80%);
+    width: clamp(200px, 50%, 80%);
     height: 100%;
     flex-grow: 1;
     z-index: 1;

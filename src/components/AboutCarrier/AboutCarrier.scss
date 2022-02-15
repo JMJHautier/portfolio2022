@@ -88,7 +88,7 @@
   border: solid vars.$color-text;
   border-width: 0 0 4px 4px;
   border-bottom-left-radius: 25px;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 .AboutCarrier__extended__wrapper2 {
@@ -99,7 +99,7 @@
   border: solid vars.$color-text;
   border-width: 0 4px 4px 0;
   border-bottom-right-radius: 25px;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 
   & .bubbleItem {
     color: vars.$color-text;
@@ -115,16 +115,15 @@
 }
 
 .AboutCarrier__extended__wrapper3 {
+  a {
+    color: vars.$color-objects;
+    text-decoration: none;
+  }
   .bubbleItem {
     background-color: vars.$color-bg-dark;
     &::after,
     &::before {
       background-color: vars.$color-bg-dark;
-    }
-    & p {
-      display: block;
-      width: 100%;
-      height: auto;
     }
   }
 }
@@ -148,6 +147,11 @@
     opacity: 1;
     transition: opacity var(--bubble-animation)
       calc(var(--wrapper-animation) * 3 + var(--bubble-animation));
+  }
+  &3 {
+    opacity: 1;
+    transition: opacity var(--bubble-animation)
+      calc(var(--wrapper-animation) * 3 + var(--bubble-animation) * 1.5);
   }
 }
 
@@ -177,4 +181,49 @@
 
 .hide {
   display: none;
+}
+
+.AboutCarrier__extended__wrapper .bubbleItem p,
+.AboutCarrier__extended__wrapper2 .bubbleItem p,
+.AboutCarrier__extended__wrapper3 .bubbleItem p {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.AboutCarrier__extended__wrapper4 {
+  margin-top: 18vh;
+  font-size: vars.$fontSize-main;
+  color: vars.$color-text-important;
+}
+
+@media only screen and (max-width: 360px) {
+  .AboutCarrier__extended__wrapper .bubbleItem,
+  .AboutCarrier__extended__wrapper2 .bubbleItem,
+  .AboutCarrier__extended__wrapper3 .bubbleItem {
+    width: 100%;
+    height: 19vh;
+
+    // transform: translate(10%, 50%);
+  }
+
+  .AboutCarrier__extended__wrapper,
+  .AboutCarrier__extended__wrapper2,
+  .AboutCarrier__extended__wrapper3 {
+    justify-content: center;
+    transform: translate(10%);
+    height: 80px;
+    position: relative;
+    z-index: 8;
+    border: none;
+    margin-bottom: 7vh;
+  }
+
+  .AboutCarrier__extended__wrapper3 .bubbleItem {
+    height: 22vh;
+  }
+
+  .AboutCarrier__extended__wrapper4 {
+    margin-top: 25vh;
+  }
 }
