@@ -8,7 +8,6 @@ Elle est utilisée par l’école de développement O’clock et par moi-même.
 \\
 **J’y suis en charge du front**, et travaille en collaboration avec [@S-Coulibally](https://github.com/S-COULIBALY) et [@VincentMingam](https://github.com/vmingam) pour le back.
 \\
-\\
 **Techno** :  CSS  - SASS  / JS - React / node.js – express / SQL – postgres [![Github](./logo/github.png)](https://github.com/memOria-project/memOria)
 
 `,
@@ -26,7 +25,6 @@ Sie wird nun von der Programmierschule O'clock während ihres Lehrgangs und von 
 \\
 Dort bin ich für das *Front-End* zuständig und arbeite mit [@S-Coulibally](https://github.com/S-COULIBALY) und [@VincentMingam](https://github.com/vmingam) an dem *Back-End* zusammen. 
 \\
-\\
 **Techno** :  CSS  - SASS  / JS - React / node.js – express / SQL – postgres
 [![Github](./logo/github.png)](https://github.com/memOria-project/memOria)`,
 }}
@@ -40,7 +38,6 @@ export const whatsthat = (<SetTranslate>
   \\
   J’y ai réalisé le *front* et le *back*, sous la supervision de [@JorgePaul](https://github.com/weyvern).
   \\
-  \\
   **Techno**: CSS  - Material-UI  / JS - React / node.js – express / MongoDB -mongoose
   [![Github](./logo/github.png)](https://github.com/JMJHautier/Whatsthat)
   `,
@@ -49,7 +46,6 @@ export const whatsthat = (<SetTranslate>
   The project is a prototype that I use as a personal database but hope to share with as many people as possible in the future. 
   \\
   I was in charge, under the supervision of [@jorgePaul](https://github.com/weyvern), of the entire development and design.  
-  \\
   \\
   **Techno**: CSS  - Material-UI  / JS - React / node.js – express / MongoDB -mongoose
   [![Github](./logo/github.png)](https://github.com/JMJHautier/Whatsthat)

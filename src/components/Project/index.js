@@ -54,9 +54,11 @@ return <div className="project">
       <CSSTransition in={!toggled} timeout={800} classNames={{enter:"illustration-enter", enterActive:"illustration-enter-active", exit:"illustration-exit", exitActive:"illustration-exit-active"}} unmountOnExit>
 
         <div> 
-          {presentationContent}
+          {presentationContent} <br /> <br />
           <TransparentButton onClick={switchToggle}>{learnMore}</TransparentButton>
+
           </div> 
+
           </CSSTransition>
 
       </div>

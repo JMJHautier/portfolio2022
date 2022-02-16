@@ -6,6 +6,13 @@ section {
     color: vars.$color-objects;
     text-decoration: none;
   }
+
+  @media only screen and (max-width: 481px) {
+    font-size: vars.$fontSize-mobile-main;
+    h1 {
+      font-size: vars.$fontSize-mobile-title;
+    }
+  }
 }
 
 html {

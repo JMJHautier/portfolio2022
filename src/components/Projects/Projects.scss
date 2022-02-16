@@ -23,6 +23,7 @@
 
   & button {
     background-color: transparent;
+    padding: 0 vars.$padding-big;
     border-bottom: none;
     border-radius: 15px;
     border-bottom-left-radius: 0px;
@@ -30,13 +31,17 @@
     border-color: transparent;
     background-color: inherit;
     color: grey;
+    color: vars.$color-text-important;
+
     margin: vars.$padding-big;
     margin-bottom: 0px;
     font-size: calc(vars.$fontSize-title / 2);
   }
 }
 .projects .projects__tabs .projects__tabs--active {
-  color: vars.$color-text-important;
+  color: vars.$color-text;
+  font-weight: 800;
+
   background-color: vars.$color-bg-main;
 }
 img[alt="Github"] {
