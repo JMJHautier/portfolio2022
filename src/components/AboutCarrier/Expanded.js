@@ -43,7 +43,7 @@ return (
   </CSSTransition>
   </div>
 </CSSTransition>
-<CSSTransition appear={true} in={toggled} timeout={800} classNames={{appear:"bubble-appear", appearActive:"bubble-appear-active3", exit:"bubble-exit", exitActive:"bubble-exit-active"}} unmountOnExit> 
+<CSSTransition in={toggled} timeout={800} classNames={{appear:"bubble-appear", appearActive:"bubble-appear-active3", exit:"bubble-exit", exitActive:"bubble-exit-active"}} unmountOnExit> 
   <div className="AboutCarrier__extended__wrapper4"> 
       {conclusion}
   </div>

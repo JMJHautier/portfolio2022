@@ -55,17 +55,17 @@ const content4 = {
 FR:{
   title: "L'idée",
   content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
-  pic: `./pictures/whatsthat/section1.png`, 
+  pic: `./pictures/whatsthat/section1.gif`, 
 },
 EN:{
   title: "The idea",
   content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
-  pic: `./pictures/whatsthat/section1.png`, 
+  pic: `./pictures/whatsthat/section1.gif`, 
 },
 DE:{
   title: "Die Idee",
   content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
-  pic: `./pictures/whatsthat/section1.png`, 
+  pic: `./pictures/whatsthat/section1.gif`, 
 },
 }
 
@@ -73,17 +73,17 @@ DE:{
   FR:{
     title: "Créer des liens avec d'autres sites d'entre-aides",
     content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
-    pic: `./pictures/whatsthat/section2.png`, 
+    pic: `./pictures/whatsthat/section2.gif`, 
   },
   EN:{
     title: "Establish links to other learning platforms",
     content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
-    pic: `./pictures/whatsthat/section2.png`, 
+    pic: `./pictures/whatsthat/section2.gif`, 
   },
   DE:{
     title: "Links zu anderen Websites für gegenseitige Hilfe herstellen",
     content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
-    pic: `./pictures/whatsthat/section2.png`, 
+    pic: `./pictures/whatsthat/section2.gif`, 
   },
   }
 
@@ -91,17 +91,17 @@ DE:{
   FR:{
     title: "Envoyer des notifications",
     content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
-    pic: `./pictures/whatsthat/section3.png`, 
+    pic: `./pictures/whatsthat/section3.gif`, 
   },
   EN:{
     title: "Push notifications",
     content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
-    pic: `./pictures/whatsthat/section3.png`, 
+    pic: `./pictures/whatsthat/section3.gif`, 
   },
   DE:{
     title: "Push-Benachrichtigungen",
     content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
-    pic: `./pictures/whatsthat/section3.png`, 
+    pic: `./pictures/whatsthat/section3.gif`, 
   },
   }
 

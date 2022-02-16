@@ -9,9 +9,14 @@ DE:`Erste berufliche Laufbahn`,
 </SetTranslate>)
 export const content = (<SetTranslate>   
   {{
-  FR: `Le développement est ma deuxième carrière ! \n\n J’ai d’abord obtenu un master en Scienes politiques, puis, de e 2015 à 2021, travaillé pour **l’UNESCO**. J’organisais des conférences et coordonnaient des publications et *ressources en ligne.*, qui m’ont donné envie de me reconvertir dans le développement web!`, 
-  EN:`Web development is my second career choice: I first completed a Master’s degree in Political Sciences then worked for UNESCO from 2015 to 2021.  \n I was organising conferences and coordinating publications and online resources – the latter motivating me to retrain in web development!`,
-  DE:`Die Web-Entwicklung ist meine zweite berufliche Laufbahn: Ich habe meinen Master in den Politikwissenschaften an der Universität Science Po Toulouse gemacht.  \n 
+  FR: `Le développement est ma deuxième carrière ! \n\n J’ai d’abord obtenu un master en Scienes politiques, puis, de 2015 à 2021, travaillé pour **l’UNESCO**.
+  \\
+  J’organisais des conférences et coordonnaient des publications et *ressources en ligne.*, qui m’ont donné envie de me reconvertir dans le développement web!`, 
+  EN:`Web development is my second career choice: I first completed a Master’s degree in Political Sciences then worked for UNESCO from 2015 to 2021.
+  \\
+  I was organising conferences and coordinating publications and online resources – the latter motivating me to retrain in web development!`,
+  DE:`Die Web-Entwicklung ist meine zweite berufliche Laufbahn: Ich habe meinen Master in den Politikwissenschaften an der Universität Science Po Toulouse gemacht.  
+  \\
   Anschließend habe ich von 2015 bis 2021 für UNESCO gearbeitet, wo ich Konferenzen organisiert und Veröffentlichungen sowie Online-Ressourcen koordiniert habe - Diese haben mich motiviert, in die Webentwicklung einzusteigen.
   `
 }}
@@ -35,17 +40,17 @@ DE:`Ich habe Führungs- und Networking-Workshops für hohe Funktionäre des öff
 
 export const ExpandedItem3 = (<SetTranslate>
 {{
-FR:`J’ai aussi, en collaboration avec des développeurs, conçu des services webs!   \n`,
-EN:`I have furthermore worked with developers and conceptualized web services:   \n`,
-DE:`Ich habe zudem mit Entwicklern zusammengearbeitet und Webservices entworfen:   \n`,
+FR:`J’ai aussi, en collaboration avec des développeurs, conçu des services webs! `,
+EN:`I have furthermore worked with developers and conceptualized web services: `,
+DE:`Ich habe zudem mit Entwicklern zusammengearbeitet und Webservices entworfen: `,
 }}
 </SetTranslate>)
 
 export const ExpandedItem3a = (<SetTranslate>
 {{
-FR:`&#707;**Deux bases de données:** une compilant des [pratiques prometteuses](https://unevoc.unesco.org/home/Promising+Practices+in+TVET), une autre de [termes utilisés à l’international]( https://unevoc.unesco.org/home/TVETipedia+Glossary).  \n`,
-EN:`&#707;**Two databases**: one presenting [Promising Practices](https://unevoc.unesco.org/home/Promising+Practices+in+TVET),  and a second [summarising the international terminology](https://unevoc.unesco.org/home/TVETipedia+Glossary) of the education sector to provide a common language for supranational communication.   \n`,
-DE:`&#707;**Zwei Datenbanken**: eine, in der [Promising Practices](https://unevoc.unesco.org/home/Promising+Practices+in+TVET) vorgestellt werden, und eine zweite, in der die [internationale Terminologie des Bildungssektors](https://unevoc.unesco.org/home/TVETipedia+Glossary) zusammengefasst ist, um eine Grundlage für gemeinsame überstaatliche Kommunikation zu schaffen.  \n`,
+FR:`&#707;**Deux bases de données:** une compilant des [pratiques prometteuses](https://unevoc.unesco.org/home/Promising+Practices+in+TVET), une autre de [termes utilisés à l’international]( https://unevoc.unesco.org/home/TVETipedia+Glossary).`,
+EN:`&#707;**Two databases**: one presenting [Promising Practices](https://unevoc.unesco.org/home/Promising+Practices+in+TVET),  and a second [summarising the international terminology](https://unevoc.unesco.org/home/TVETipedia+Glossary) of the education sector to provide a common language for supranational communication. `,
+DE:`&#707;**Zwei Datenbanken**: eine, in der [Promising Practices](https://unevoc.unesco.org/home/Promising+Practices+in+TVET) vorgestellt werden, und eine zweite, in der die [internationale Terminologie des Bildungssektors](https://unevoc.unesco.org/home/TVETipedia+Glossary) zusammengefasst ist, um eine Grundlage für gemeinsame überstaatliche Kommunikation zu schaffen.`,
 }}
 </SetTranslate>)
 

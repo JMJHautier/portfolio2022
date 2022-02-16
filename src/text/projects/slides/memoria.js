@@ -13,7 +13,8 @@ memOria is free and allows you to create your learning decks, browse them, mark 
 `,
 DE:`Mit *memOria* wollten wir eine Lernkarteien-Anwendung kreieren, mit der man wichtige Begriffe, Konzepte oder bestimmte Programmier-Codes leichter festhalten, wiederholen und somit lernen kann.  \n
 Es gibt viele Lernkarten-Apps, aber keine war für mich geeignet: Entweder erlaubten sie es nicht, Codierungen mit Syntaxhervorhebung hinzuzufügen (quizzlet, anki), oder sie waren kostenpflichtig (mem.dev).   \n
-*memOria* ist kostenlos und ermöglicht es, seine Lernpakete zu erstellen, sie zu durchsuchen, erlernte und nicht erlernte Karten zu markieren etc. 
+*memOria* ist kostenlos und ermöglicht es, seine Lernpakete zu erstellen, sie zu durchsuchen, erlernte und nicht erlernte Karten zu markieren etc.
+
 `,
 }
 
@@ -53,53 +54,53 @@ const content4 = {
 FR:{
   title: "L’idée",
   content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
-  pic: `./pictures/memoria/section1.png`, 
+  pic: `./pictures/memoria/section1.gif`, 
 },
 EN:{
   title: "The idea",
   content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
-  pic: `./pictures/memoria/section1.png`, 
+  pic: `./pictures/memoria/section1.gif`, 
 },
 DE:{
   title: "Die Idee",
   content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
-  pic: `./pictures/memoria/section1.png`, 
+  pic: `./pictures/memoria/section1.gif`, 
 },
 }
 
  const slide2 = {
   FR:{
-    title: "S'adapter à des contenus divers",
+    title: "Travailler avec des librairies externes",
     content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section2.gif`, 
   },
   EN:{
-    title: "Adapt to different content",
+    title: "Working with external libraries",
     content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section2.gif`, 
   },
   DE:{
-    title: "Sich an verschiedene Inhalte anpassen",
+    title: "Arbeiten mit externen Bibliotheken",
     content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section2.gif`, 
   },
   }
 
  const slide3 = {
   FR:{
-    title: "Travailler avec des librairies externes",
+    title: "S'adapter à des contenus divers",
     content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section3.gif`, 
   },
   EN:{
-    title: "Working with external libraries",
+    title: "Adapt to different content",
     content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section3.gif`, 
   },
   DE:{
-    title: "Arbeiten mit externen Bibliotheken",
+    title: "Sich an verschiedene Inhalte anpassen",
     content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section3.gif`, 
   },
   }
 
@@ -107,17 +108,17 @@ DE:{
   FR:{
     title: "Développer des composants réutilisables",
     content: <ReactMarkdown>{content4[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section4.gif`, 
   },
   EN:{
     title: "Develop reusable components",
     content: <ReactMarkdown>{content4[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section4.gif`, 
   },
   DE:{
     title: "Wiederverwendbare Komponenten entwickeln",
     content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
-    pic: `./pictures/memoria/section1.png`, 
+    pic: `./pictures/memoria/section4.gif`, 
   },
   }
 

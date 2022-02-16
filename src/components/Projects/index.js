@@ -31,7 +31,7 @@ const Projects = ()=>{
 
 return <div className="projects"> 
       <h2 className="sectionTitle">{title}</h2>
-      <div className="projects__intro">{content}</div>
+      <div className="projects__intro"><p>{content}</p></div>
       <div className="projects__tabs"> 
       {projects.map((project)=> <button onClick={handleClick} className={projectTitle === project?"projects__tabs--active":""}>{project}</button>)}
       </div>

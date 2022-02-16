@@ -2,6 +2,10 @@
 
 section {
   position: relative;
+  a {
+    color: vars.$color-objects;
+    text-decoration: none;
+  }
 }
 
 html {

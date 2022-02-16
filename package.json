@@ -23,6 +23,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
     "react-transition-group": "^4.4.2",
+    "remark-breaks": "^3.0.2",
     "sass": "^1.48.0",
     "web-vitals": "^2.1.3"
   },

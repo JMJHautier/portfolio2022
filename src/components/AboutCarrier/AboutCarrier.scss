@@ -115,10 +115,6 @@
 }
 
 .AboutCarrier__extended__wrapper3 {
-  a {
-    color: vars.$color-objects;
-    text-decoration: none;
-  }
   .bubbleItem {
     background-color: vars.$color-bg-dark;
     &::after,
@@ -131,6 +127,9 @@
 :root {
   --wrapper-animation: 300ms;
   --bubble-animation: 800ms;
+}
+.bubble-enter {
+  opacity: 0;
 }
 .bubble-appear {
   opacity: 0;
@@ -153,6 +152,12 @@
     transition: opacity var(--bubble-animation)
       calc(var(--wrapper-animation) * 3 + var(--bubble-animation) * 1.5);
   }
+}
+
+.bubble-enter-active3 {
+  opacity: 1;
+  transition: opacity var(--bubble-animation)
+    calc(var(--wrapper-animation) * 3 + var(--bubble-animation) * 1.5);
 }
 
 .bubble-exit {

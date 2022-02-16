@@ -21,7 +21,7 @@ return (
   <div className="AboutReconversion__container">
 
     <div className="AboutReconversion__picture"> 
-      <img src="./pictures/AboutCarrier_short.jpg" alt="Wideshot of a UN meeting"/>
+      <img src="./pictures/reconversion.png" alt=""/>
     </div>
     <div className={contentClass}>
       <p>{content}</p>

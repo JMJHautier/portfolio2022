@@ -21,9 +21,11 @@
 
 .AboutReconversion__picture {
   @extend %picture;
-
+  & img {
+    width: 90%;
+  }
   &::after {
-    @extend %frame-blue;
-    @extend %frame-right;
+    // @extend %frame-blue;
+    // @extend %frame-right;
   }
 }
