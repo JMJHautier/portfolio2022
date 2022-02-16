@@ -10,8 +10,8 @@ DE:'Kontaktieren Sie mich',
 
 export const content = (<SetTranslate>
 {{
-FR:`**Je suis à la recherche d’un emploi** ! N’hésitez pas à me contacter si vous voyez une synergie entre vos projets et mes compétences ! 
-Je suis aussi heureux de participer à des projets open-source en tout genre, en particulier ceux qui promeuvent la formation et le partage de connaissances ! 
+FR:`**Je suis à la recherche d’un emploi**! 
+N’hésitez pas à me contacter si vous voyez une synergie entre vos projets et mes compétences. Je suis aussi heureux de participer à des projets open-source en tout genre, en particulier ceux qui promeuvent la formation et le partage de connaissances.
 `,
 EN:`I am looking for a new job: do not hesitate to contact me if you are interested in my profile and / or see a connection between your projects and my professional experience.   \n
 I am also happy to participate in open-source projects of all kinds, especially those that promote education and knowledge sharing! 

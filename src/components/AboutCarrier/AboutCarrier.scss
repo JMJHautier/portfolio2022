@@ -60,7 +60,7 @@
 .sectionTitle {
   @extend %sectionTitle;
   &::after {
-    @extend %underTitle;
+    @extend %underTitle-grey;
   }
 }
 

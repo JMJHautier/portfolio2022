@@ -10,6 +10,12 @@
   @extend %container;
   flex-direction: column;
   justify-content: center;
+  & .sectionTitle {
+    @extend %sectionTitle-grey;
+    &::after {
+      @extend %underTitle-blue;
+    }
+  }
 }
 
 .contact__content {

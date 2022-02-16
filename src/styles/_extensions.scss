@@ -1,11 +1,11 @@
 @use "./vars";
 
 %sectionTitle,
-%sectionTitle-grey {
+%sectionTitle-grey,
+%sectionTitle-blue {
   position: relative;
   height: 15vh;
   color: vars.$color-text-alt;
-  color: vars.$color-text-important;
   padding: vars.$padding-small;
   font-size: vars.$fontSize-title;
   width: fit-content;
@@ -15,9 +15,12 @@
 %sectionTitle-grey {
   color: vars.$color-text;
 }
-
+%sectionTitle-blue {
+  color: vars.$color-objects;
+}
 %underTitle,
-%underTitle-blue {
+%underTitle-blue,
+%underTitle-grey {
   content: "";
   display: block;
   height: 10px;
@@ -30,7 +33,10 @@
 %underTitle-blue {
   background-color: vars.$color-objects;
 }
-
+%underTitle-grey {
+  background-color: vars.$color-bg-dark;
+  // filter: contrast(200%);
+}
 %frame,
 %frame-blue {
   content: "";
