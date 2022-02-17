@@ -4,8 +4,9 @@ export const pickLanguage = (event, setLanguage) => {
   const language = id || value
 
   
-  console.log({id})
+  console.log({language})
   localStorage.setItem('language', language)
+
   setLanguage(language)
 }
 

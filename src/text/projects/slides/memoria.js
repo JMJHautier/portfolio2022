@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 
-const language= localStorage.getItem('language');
-
+const language= localStorage.getItem('language')
+console.log({language})
 const content1 = {
 FR:`Avec *memOria*, nous voulions une application pour mémoriser facilement des mots clés, des concepts, ou certaines syntaxes particulières. \n
 Il y a de nombreuses applications de cartes de révision, mais aucune ne convenait : soit elle ne permettait pas d'ajouter du code avec coloration syntaxique (quizzlet, anki), soit elles étaient payantes (mem.dev).   \n

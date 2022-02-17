@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import Illustration from "./Illustration"
 import TabSystem from "./TabSystem"
 import useToggle from '../../hooks/useToggle'
@@ -20,14 +20,14 @@ const Project = ({tabs, projectTitle})=>{
 
   const [activeTab, setActiveTab] = useState(tabs[0])
   const [inactiveTabs, setInactiveTabs] = useState([tab2, tab3, tab4])
-
+  const container = useRef();
 
   useEffect(()=> {
     setTransitionIsReset(false)
     setTimeout(()=> {
       setTransitionIsReset(true)
     }, 200) 
-  }, [activeTab.pic, toggled])
+  }, [activeTab?.pic, toggled])
 
   useEffect(()=>{
     setToggle(false)
@@ -39,7 +39,7 @@ const Project = ({tabs, projectTitle})=>{
     setInactiveTabs([tab2, tab3, tab4])
   }, [tabs])
 
-return <div className="project"> 
+return <div className="project" tabIndex="-1" ref={container}> 
     <div className="project__container"> 
 
       <div className="project__left-side">
@@ -55,7 +55,7 @@ return <div className="project">
 
         <div> 
           {presentationContent} <br /> <br />
-          <TransparentButton onClick={switchToggle}>{learnMore}</TransparentButton>
+          <TransparentButton onClick={()=>{container.current.focus();switchToggle(); }}>{learnMore}</TransparentButton>
 
           </div> 
 

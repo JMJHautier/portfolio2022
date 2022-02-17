@@ -13,13 +13,14 @@ const Projects = ()=>{
 
   const [projectTitle, setProjectTitle] = useState("memOria")
   const [projectTabs, setProjectTabs] = useState(Object.values(tabs["memoria"]))
-
+  console.log(projectTabs)
 
   useEffect(()=> {
     const cleantTitle = projectTitle.toLowerCase().replace("'", "").replace(" ", "")
     const tabsInArray = Object.values(tabs[cleantTitle])
     setProjectTabs(tabsInArray)
     // setProjectTabs(Object.values(tabs["whatsthat"]))
+
   }, [projectTitle, language])
 
   const projects = ["memOria", "What's that"]

@@ -1,7 +1,10 @@
 @use "./styles/vars";
-
+.App {
+}
 section {
+  // font-size: vars.$fontSize-main;
   position: relative;
+  scroll-margin-top: 50px;
   a {
     color: vars.$color-objects;
     text-decoration: none;

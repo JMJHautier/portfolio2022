@@ -84,7 +84,7 @@
 %content {
   font-size: vars.$fontSize-main;
 
-  width: clamp(200px, 40%, 100%);
+  width: clamp(250px, 40%, 100%);
   align-self: stretch;
   flex-grow: 1;
   display: flex;
@@ -92,6 +92,9 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: vars.$padding-big;
+  @media only screen and (max-width: 481px) {
+    padding: vars.$padding-small 0;
+  }
   // border-bottom: 1px solid grey;
 
   & p {

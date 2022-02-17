@@ -26,14 +26,13 @@
   & .AboutCarrier__content {
     font-size: vars.$fontSize-main;
 
-    width: clamp(200px, 40%, 100%);
+    width: clamp(250px, 40%, 100%);
     align-self: stretch;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: vars.$padding-big;
     // border-bottom: 1px solid grey;
 
     & p {

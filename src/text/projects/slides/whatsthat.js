@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 
-const language= localStorage.getItem('language');
+const language= localStorage.getItem('language')
 
 const content1 = {
 FR:`En commençant mon apprentissage du code, j'ai réalisé que Google était mon meilleur ami... à condition de savoir quoi écrire dans la barre de recherche !  \n

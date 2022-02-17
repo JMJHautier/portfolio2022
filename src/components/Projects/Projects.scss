@@ -52,4 +52,7 @@ img[alt="Github"] {
   @extend %content;
   width: 100%;
   text-align: center;
+  @media only screen and (max-width: 1180px) {
+    text-align: justify;
+  }
 }

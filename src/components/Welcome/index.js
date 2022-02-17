@@ -5,7 +5,7 @@ const Welcome = ()=>{
 const language = localStorage.getItem('language')
 
 return <div className="welcome">
-  <div style={{display:"flex", justifyContent: "center", alignItems:"center", width:"100%"}}>
+  <div style={{display:"flex", flexWrap:"wrap", justifyContent: "center", alignItems:"center", width:"100%"}}>
     <div className="welcome__content">
         <h2> {hello}</h2>
         <p> {content}

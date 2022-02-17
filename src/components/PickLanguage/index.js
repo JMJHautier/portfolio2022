@@ -12,10 +12,10 @@ return <div className="PickLanguage__container">
   Stick to english please!
   </button>
   <button onClick = {(event)=> handleClick(event, setLanguage)}  id="DE">
-  lieber auf Deutsch, danke!
+  Lieber auf Deutsch, danke!
   </button>
   <button onClick = {(event)=> handleClick(event, setLanguage)} id="FR">
-  en français, bien sur! 
+  En français, bien sur! 
   </button>
 </div>
 }

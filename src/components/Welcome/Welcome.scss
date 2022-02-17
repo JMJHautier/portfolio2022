@@ -16,7 +16,7 @@
   .pushUp {
   }
   .welcome__content {
-    width: 40%;
+    width: clamp(250px, 40%, 800px);
     font-size: calc(60% + 2vmin);
     & h2 {
       font-size: calc(60% + 5vmin);
@@ -24,7 +24,7 @@
   }
   & .welcome__image {
     position: relative;
-    width: 25%;
+    width: clamp(250px, 25%, 500px);
     margin: clamp(1.5rem, 0.5vw, 2rem);
     z-index: 1;
     & img {
