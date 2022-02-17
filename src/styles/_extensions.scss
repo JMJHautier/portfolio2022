@@ -114,3 +114,21 @@
     object-fit: contain;
   }
 }
+
+%buttonHover {
+  background-color: vars.$color-bg-alt;
+  color: vars.$color-text-alt;
+  filter: none;
+  transition: background-color 0.8s, filter 0.8s;
+
+  padding: vars.$padding-small;
+  margin: 5rem;
+
+  &:hover {
+    background-color: vars.$color-objects;
+    filter: drop-shadow(0 0 0.25rem black);
+  }
+  & > p {
+    display: inline;
+  }
+}

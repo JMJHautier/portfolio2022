@@ -8,11 +8,19 @@ import { LanguageContext } from '../../context/LanguageContext'
 const Nav = ({ isVisible, ratio})=>{
 
   const {setLanguage, language} = useContext(LanguageContext)
-  
+  // const selectedOption = (language) => {
+  //   switch(language) {
+  //     case "EN": return "English";
+  //     case "FR": return "Français";
+  //     case "DE": return"Deutsch";
+  //     default: return "English";
+  //   }
+  // }
 return <nav>
   <div className="nav__left">Jean Hautier</div>
   <div className="nav__right">
     <div className="nav__language"><select value={language} onChange={(event)=>handleSelect(event, setLanguage)}>
+      {/* <option selected>{selectedOption(language)}</option> */}
       <option value="EN">English</option>
       <option value="DE">Deutsch</option>
       <option value="FR">Français</option>

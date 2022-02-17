@@ -1,5 +1,5 @@
 @use "../../styles/vars";
-
+@import "../../styles/extensions";
 .PickLanguage__container {
   display: flex;
   font-size: vars.$fontSize-main;
@@ -8,9 +8,46 @@
   align-items: center;
   height: 80vh;
   & button {
-    background-color: transparent;
+    background-color: vars.$color-objects;
     border: none;
     cursor: pointer;
     margin: 20px;
+    @extend %buttonHover;
+    border-radius: 15px;
+    &::before,
+    &::after {
+      content: "";
+      background: url("../../../public/flags/GB.png") no-repeat;
+      background-size: contain;
+      display: inline-block;
+      width: 50px;
+      height: 25px;
+      margin: 0 10px;
+    }
+
+    &:nth-of-type(2) {
+      background-color: vars.$color-bg-dark;
+      &::before,
+      &::after {
+        content: "";
+        background: url("../../../public/flags/germany.svg") no-repeat;
+        background-size: contain;
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+      }
+    }
+    &:last-of-type {
+      background-color: vars.$color-bg-alt;
+      &::before,
+      &::after {
+        content: "";
+        background: url("../../../public/flags/france.webp") no-repeat;
+        background-size: contain;
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+      }
+    }
   }
 }

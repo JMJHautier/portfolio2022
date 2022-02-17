@@ -19,6 +19,15 @@ nav {
   overflow: hidden;
 }
 
+// .nav__language {
+//   &::after {
+//     content: ">";
+//     transform: rotate(90deg);
+//     display: inline-block;
+//     width: 5px;
+//     height: 5px;
+//   }
+// }
 .nav__right {
   display: flex;
   & .nav__item {
