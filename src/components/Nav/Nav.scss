@@ -22,13 +22,13 @@ nav {
   & .nav__item {
     padding: 0 vars.$padding-big;
     background-color: transparent;
-    color: white;
+    color: vars.$color-text-important;
     border: none;
     text-decoration: none;
     transition: filter 1s;
   }
   & .nav__item--active {
-    color: vars.$color-text-important;
+    color: vars.$color-text-alt;
     transition: color 0.5s;
   }
 }
@@ -78,7 +78,8 @@ nav {
       background-color: transparent;
       border: none;
       border-bottom: 1px solid grey;
-      color: white;
+      color: vars.$color-text-important;
+      cursor: pointer;
     }
   }
 }

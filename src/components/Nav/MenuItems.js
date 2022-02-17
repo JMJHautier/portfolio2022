@@ -16,21 +16,43 @@ const MenuItem = ({isVisible, ratio})=>{
       const myItem = Object.fromEntries(Object.entries(isVisible).filter(([key, value]) => value))
       const myRealItem = Object.fromEntries(Object.entries(myItem).filter(([key, value]) => key !== "about2"))
       console.log({myRealItem})
+      if(myItem[item.name]&&Object.keys(myRealItem).length === 1){
+        item.style.filter = `brightness(100%)`
 
-      if(ratio[item.name] > 0.3) {
-        if(myItem[item.name]&& Object.keys(myRealItem).length === 1)
-        {
-          item.style.filter = 'brightness(1)'
-        }
-        else {
-      item.style.filter = `brightness(${ratio[item.name]})`
-        }
       }
       else {
-        item.style.filter = `brightness(100%)`
-        // item.classList
+      if(isVisible["about"] || isVisible["about2"]) {
 
+        if(ratio[item.name]>0.1) {
+          item.style.filter = `brightness(${ratio[item.name]})`
+        }
+        else {
+          item.style.filter = `brightness(100%)`
+        }
+      } else {
+        if(ratio[item.name]>0.3) {
+          item.style.filter = `brightness(${ratio[item.name]})`
+        }
+        else {
+          item.style.filter = `brightness(100%)`
+        }
       }
+      }
+      // if(ratio[item.name] > 0.3) {
+      //   if(myItem[item.name]&& Object.keys(myRealItem).length === 1)
+      //   {
+      //     console.log(Object.keys(myRealItem).length)
+      //     item.style.filter = 'brightness(1)'
+      //   }
+      //   else {
+      // item.style.filter = `brightness(${ratio[item.name]})`
+      //   }
+      // }
+      // else {
+      //   item.style.filter = `brightness(100%)`
+      //   // item.classList
+
+      // }
     })
   }, [ratio])
 

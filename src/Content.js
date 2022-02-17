@@ -14,7 +14,7 @@ const Content = ({isVisible, boundY, addObserver, ratio, currentSection})=>{
 
   const section  = useRef([])
   const sectionIndex = useState(0)
-  const steps = [0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+  const steps = [0.1, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
   useEffect(()=> {
     console.log(section)
     section?.current?.map((sec)=> addObserver(sec,  steps))
