@@ -1,4 +1,7 @@
+import { useEffect, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
+import { useContext } from 'react'
+import { LanguageContext } from '../../../context/LanguageContext'
 
 const language= localStorage.getItem('language')
 console.log({language})
@@ -53,17 +56,17 @@ const content4 = {
  const slide1 = {
 FR:{
   title: "L’idée",
-  content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
+  content: <ReactMarkdown>{content1["FR"]}</ReactMarkdown> ,
   pic: `./pictures/memoria/section1.gif`, 
 },
 EN:{
   title: "The idea",
-  content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
+  content: <ReactMarkdown>{content1["EN"]}</ReactMarkdown> ,
   pic: `./pictures/memoria/section1.gif`, 
 },
 DE:{
   title: "Die Idee",
-  content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
+  content: <ReactMarkdown>{content1["DE"]}</ReactMarkdown> ,
   pic: `./pictures/memoria/section1.gif`, 
 },
 }
@@ -71,17 +74,17 @@ DE:{
  const slide2 = {
   FR:{
     title: "Travailler avec des librairies externes",
-    content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["FR"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section2.gif`, 
   },
   EN:{
     title: "Working with external libraries",
-    content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["EN"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section2.gif`, 
   },
   DE:{
     title: "Arbeiten mit externen Bibliotheken",
-    content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["DE"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section2.gif`, 
   },
   }
@@ -89,17 +92,17 @@ DE:{
  const slide3 = {
   FR:{
     title: "S'adapter à des contenus divers",
-    content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content3["FR"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section3.gif`, 
   },
   EN:{
     title: "Adapt to different content",
-    content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content3["EN"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section3.gif`, 
   },
   DE:{
     title: "Sich an verschiedene Inhalte anpassen",
-    content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["DE"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section3.gif`, 
   },
   }
@@ -107,22 +110,38 @@ DE:{
  const slide4 = {
   FR:{
     title: "Développer des composants réutilisables",
-    content: <ReactMarkdown>{content4[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content4["FR"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section4.gif`, 
   },
   EN:{
     title: "Develop reusable components",
-    content: <ReactMarkdown>{content4[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content4["EN"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section4.gif`, 
   },
   DE:{
     title: "Wiederverwendbare Komponenten entwickeln",
-    content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["DE"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section4.gif`, 
   },
   }
 
-  export const tab1= slide1[language]
-  export const tab2= slide2[language]
-  export const tab3= slide3[language]
-  export const tab4= slide4[language]
+  export const useTabs =()=> {
+    const language = useContext(LanguageContext)
+    const [tabs, setTabs] = useState()
+
+    useEffect(()=> {
+      setTabs({
+        tab1: slide1[language],
+        tab2: slide1[language],
+        tab3: slide1[language],
+        tab4: slide1[language]
+      })
+
+    }, [language])
+
+    return [tabs]
+  }
+  export const tab1= slide1
+  export const tab2= slide2
+  export const tab3= slide3
+  export const tab4= slide4

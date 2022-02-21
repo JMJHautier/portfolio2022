@@ -24,7 +24,7 @@ const TabSystem = ({activeTab, setActiveTab, tabs, setTabs, transitionIsReset})=
       }
     })
     setTabs(filterTab)
-  }, [activeTab.title])
+  }, [activeTab?.title])
 
 
 return <div className="container__tab">

@@ -8,7 +8,7 @@ import TransparentButton from "../Buttons/Transparent"
 import * as presentation from "../../text/projects/presentation/index.js"
 import {back, learnMore} from "../../text/buttons"
 
-const Project = ({tabs, projectTitle})=>{
+const Project = ({tabs, projectTitle, language})=>{
 
   
   const cleantTitle = projectTitle.toLowerCase().replace("'", "").replace(" ", "") 
@@ -37,7 +37,7 @@ const Project = ({tabs, projectTitle})=>{
   useEffect(()=> {
     setActiveTab(tabs[0])
     setInactiveTabs([tab2, tab3, tab4])
-  }, [tabs])
+  }, [tabs, language])
 
 return <div className="project" tabIndex="-1" ref={container}> 
     <div className="project__container"> 
@@ -45,7 +45,7 @@ return <div className="project" tabIndex="-1" ref={container}>
       <div className="project__left-side">
           {toggled&&<h2><TransparentButton onClick={switchToggle}>{back}</TransparentButton></h2>}
 
-          <Illustration switchToggle={switchToggle} pic={toggled?activeTab.pic:homePic} title={projectTitle} transitionIsReset={transitionIsReset}/>
+          <Illustration switchToggle={switchToggle} pic={toggled?activeTab?.pic:homePic} title={projectTitle} transitionIsReset={transitionIsReset}/>
       </div>
       <div className="project__right-side">
       <CSSTransition in={toggled} timeout={800} classNames={{enter:"illustration-enter", enterActive:"illustration-enter-active", exit:"illustration-exit", exitActive:"illustration-exit-active"}} unmountOnExit>

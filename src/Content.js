@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useContext } from 'react';
 import './App.scss';
 import AboutCarrier from './components/AboutCarrier';
 import AboutReconversion from './components/AboutReconversion';
@@ -9,8 +9,9 @@ import Up from './components/NextSec/Up';
 import Project from './components/Project';
 import Projects from './components/Projects';
 import Welcome from './components/Welcome';
-
+import { LanguageContext } from './context/LanguageContext';
 const Content = ({isVisible, boundY, addObserver, ratio, currentSection})=>{
+  const {setLanguage, language} = useContext(LanguageContext)
 
   const section  = useRef([])
   const sectionIndex = useState(0)
@@ -34,7 +35,9 @@ return (
   </section>
 
   <section id="projects" ref={(el) => section.current.push(el)}>
+    {language?
   <Projects />
+    :"hello"}
   </section>
 
   <section id="contact" ref={(el) => section.current.push(el)}>
