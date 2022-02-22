@@ -15,18 +15,13 @@ const Projects = ()=>{
 
   const [projectTitle, setProjectTitle] = useState("memOria")
   const [projectTabs, setProjectTabs] = useState(Object.values(tabs["memoria"]))
-  // const [test, setTest] = useState()
-  const [languageSlide, setLanguageSlide] = useState()
-  console.log(projectTabs)
 
-  // useEffect(()=> {
 
-  // }, [language])
   useEffect(()=> {
     const cleantTitle = projectTitle.toLowerCase().replace("'", "").replace(" ", "")
     import(`../../text/projects/slides/${cleantTitle}`).then((response)=> {
       const {tab1, tab2, tab3, tab4} = response
-      setLanguageSlide(prevState => (Object.values({
+      setProjectTabs(prevState => (Object.values({
         tab1:tab1[language],
         tab2:tab2[language],
         tab3: tab3[language],
@@ -36,20 +31,9 @@ const Projects = ()=>{
     ))
     })
 
-    // import('../../text/projects/slides/memoria').then((response) => {
-      // setTest(tabi)
-      // set
-      // setProjectTabs(Object.values(response))
-    // })
-    // const tabsInArray = Object.values(tabs[cleantTitle])
-    // setProjectTabs(tabsInArray)
-    // setProjectTabs(Object.values(tabs["whatsthat"]))
-
   }, [projectTitle, language])
 
   const projects = ["memOria", "What's that"]
-  const tabsInArray = Object.values(projectTabs)
-  const buttons = useRef([])
   const handleClick = (event) => {
     setProjectTitle(event.currentTarget.innerText)
   }
@@ -60,8 +44,8 @@ return <div className="projects">
       <div className="projects__tabs"> 
       {projects.map((project)=> <button onClick={handleClick} className={projectTitle === project?"projects__tabs--active":""}>{project}</button>)}
       </div>
-      {languageSlide&&
-      <Project language={language} tabs={languageSlide} projectTitle={projectTitle} />
+      {projectTabs&&
+      <Project language={language} tabs={projectTabs} projectTitle={projectTitle} />
 }
       </div>
 }

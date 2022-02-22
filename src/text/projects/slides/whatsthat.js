@@ -54,17 +54,17 @@ const content4 = {
  const slide1 = {
 FR:{
   title: "L'idée",
-  content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
+  content: <ReactMarkdown>{content1["FR"]}</ReactMarkdown> ,
   pic: `./pictures/whatsthat/section1.gif`, 
 },
 EN:{
   title: "The idea",
-  content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
+  content: <ReactMarkdown>{content1["EN"]}</ReactMarkdown> ,
   pic: `./pictures/whatsthat/section1.gif`, 
 },
 DE:{
   title: "Die Idee",
-  content: <ReactMarkdown>{content1[language]}</ReactMarkdown> ,
+  content: <ReactMarkdown>{content1["DE"]}</ReactMarkdown> ,
   pic: `./pictures/whatsthat/section1.gif`, 
 },
 }
@@ -72,17 +72,17 @@ DE:{
  const slide2 = {
   FR:{
     title: "Créer des liens avec d'autres sites d'entre-aides",
-    content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["FR"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section2.gif`, 
   },
   EN:{
     title: "Establish links to other learning platforms",
-    content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["EN"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section2.gif`, 
   },
   DE:{
     title: "Links zu anderen Websites für gegenseitige Hilfe herstellen",
-    content: <ReactMarkdown>{content2[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["DE"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section2.gif`, 
   },
   }
@@ -90,17 +90,17 @@ DE:{
  const slide3 = {
   FR:{
     title: "Envoyer des notifications",
-    content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content3["FR"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section3.gif`, 
   },
   EN:{
     title: "Push notifications",
-    content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content3["EN"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section3.gif`, 
   },
   DE:{
     title: "Push-Benachrichtigungen",
-    content: <ReactMarkdown>{content3[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content3["DE"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section3.gif`, 
   },
   }
@@ -108,22 +108,22 @@ DE:{
  const slide4 = {
   FR:{
     title: "Utiliser une framework CSS",
-    content: <ReactMarkdown>{content4[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content4["FR"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section4.png`, 
   },
   EN:{
     title: "Use a CSS framework",
-    content: <ReactMarkdown>{content4[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content4["EN"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section4.png`, 
   },
   DE:{
     title: "Ein CSS-Framework verwenden",
-    content: <ReactMarkdown>{content4[language]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content4["DE"]}</ReactMarkdown> ,
     pic: `./pictures/whatsthat/section4.png`, 
   },
   }
 
-  export const tab1= slide1[language]
-  export const tab2= slide2[language]
-  export const tab3= slide3[language]
-  export const tab4= slide4[language]
+  export const tab1= slide1
+  export const tab2= slide2
+  export const tab3= slide3
+  export const tab4= slide4
