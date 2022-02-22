@@ -1,20 +1,23 @@
-import { useEffect, useState, useRef, lazy } from "react"
+import { useEffect, useState } from "react"
 import Project from "../Project"
 import './Projects.scss'
 import * as tabs from '../../text/projects/slides/'
 import { content, title } from "../../text/projects"
 import { useContext } from "react"
 import { LanguageContext } from "../../context/LanguageContext"
+//! ne pas supprimer! utilisés dans le useEffect! 
 import * as memoria from "../../text/projects/slides/memoria"
 import * as whatsthat from  "../../text/projects/slides/whatsthat"
+//! fin de pas supprimer!
 
 const Projects = ()=>{
 
 
-    const {setLanguage, language} = useContext(LanguageContext)
+const {setLanguage, language} = useContext(LanguageContext)
 
   const [projectTitle, setProjectTitle] = useState("memOria")
   const [projectTabs, setProjectTabs] = useState(Object.values(tabs["memoria"]))
+  const projects = ["memOria", "What's that"]
 
 
   useEffect(()=> {
@@ -33,7 +36,6 @@ const Projects = ()=>{
 
   }, [projectTitle, language])
 
-  const projects = ["memOria", "What's that"]
   const handleClick = (event) => {
     setProjectTitle(event.currentTarget.innerText)
   }

@@ -10,7 +10,6 @@ import {back, learnMore} from "../../text/buttons"
 
 const Project = ({tabs, projectTitle, language})=>{
 
-  
   const cleantTitle = projectTitle.toLowerCase().replace("'", "").replace(" ", "") 
   const presentationContent = presentation[cleantTitle]
   const [transitionIsReset, setTransitionIsReset] = useState(true)
