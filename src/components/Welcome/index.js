@@ -12,7 +12,7 @@ return <div className="welcome">
         </p>
     </div>
     <div className="welcome__image">
-      <img  src="/pictures/whatsapp.png" alt="Headshot of Jean Hautier"/>
+      <img  src="/pictures/JeanHautier.JPG" alt="Headshot of Jean Hautier"/>
     </div>
   </div>
   <div className="pushUp">
