@@ -10,7 +10,7 @@ DE:'Projekte',
 
 export const content = (<SetTranslate>
 {{
-FR:`Avant ma reconversion, j’appréciais déjà les plateformes éducatives ou de partage des connaissances – j’ai toujours aimais contribuer à Wikipedia par exemple ! Lors de ma première carrière, j’ai eu la chance d’en concevoir quelques-unes.
+FR:`Avant ma reconversion, j’appréciais déjà les plateformes éducatives ou de partage des connaissances – j’ai toujours aimé contribuer à Wikipedia par exemple ! Lors de ma première carrière, j’ai eu la chance d’en concevoir quelques-unes.
 De là, il me semblait évident d’utiliser mes connaissances nouvellement acquises pour **développer des plateformes d’apprentissages**. Des projets concrets, qui pourraient m’aider, moi et d’autres développeurs débutants, à mieux programmer. 
 Voici mes projets les plus aboutis.`,
 EN:`Since my studies, I have been interested in educational or knowledge platforms and regularly contribute to *Wikipedia*, for example. Furthermore, in my first job I had the opportunity to participate in the design of such platforms.

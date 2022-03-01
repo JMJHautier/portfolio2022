@@ -14,7 +14,7 @@ FR:`Ma reconversion a commencé en janvier 2021.
 \\
 J’ai alterné bootcamp avec études personnelles afin d’acquérir de solides bases en HTML, CSS et Javascript, et être à l’aise avec React, postgreSQL et MongoDB.
 \\
-Seul ou en équipe, j'ai aussi développé des projets concrets qui m'ont aidé dans ma pratique du code et permis d’obtenir un titre professionnel reconnu de développeur web reconnu par l’Etat français. 
+Seul ou en équipe, j'ai aussi développé des projets concrets qui m'ont aidé dans ma pratique du code et permis d’obtenir le titre professionnel de développeur web (équivalent bac +2). 
 `,
 EN:`My retraining started in January 2021. 
 \\
