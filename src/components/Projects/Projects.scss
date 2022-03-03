@@ -50,9 +50,11 @@ img[alt="Github"] {
 
 .projects__intro {
   @extend %content;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   text-align: center;
   @media only screen and (max-width: 1180px) {
     text-align: justify;
+    width: 100%;
   }
 }
