@@ -48,7 +48,7 @@
       }
       border-radius: 15px;
       border: none;
-      filter: drop-shadow(0 0 0.25rem black);
+      filter: drop-shadow(0 0 0.15rem grey);
       margin: vars.$padding-small;
     }
 
@@ -63,7 +63,7 @@
 
       &:hover {
         background-color: vars.$color-objects;
-        filter: drop-shadow(0 0 0.25rem black);
+        filter: drop-shadow(0 0 0.15rem grey);
       }
       & > p {
         display: inline;
