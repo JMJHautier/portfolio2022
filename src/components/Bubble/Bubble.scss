@@ -16,7 +16,10 @@
   height: 20vh;
   font-size: calc(60% + 1vmin);
   z-index: 100;
-
+  @media screen and (max-width: 1440px) {
+    font-size: calc(25% + 1vmin);
+    height: 15vh;
+  }
   @media screen and (max-width: 1300px) {
     font-size: calc(25% + 1vmin);
     height: 14vh;
