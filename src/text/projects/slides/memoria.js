@@ -74,17 +74,17 @@ DE:{
  const slide2 = {
   FR:{
     title: "Travailler avec des librairies externes",
-    content: <ReactMarkdown>{content2["FR"]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content3["FR"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section2.gif`, 
   },
   EN:{
     title: "Working with external libraries",
-    content: <ReactMarkdown>{content2["EN"]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content3["EN"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section2.gif`, 
   },
   DE:{
     title: "Arbeiten mit externen Bibliotheken",
-    content: <ReactMarkdown>{content2["DE"]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content3["DE"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section2.gif`, 
   },
   }
@@ -92,12 +92,12 @@ DE:{
  const slide3 = {
   FR:{
     title: "S'adapter à des contenus divers",
-    content: <ReactMarkdown>{content3["FR"]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["FR"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section3.gif`, 
   },
   EN:{
     title: "Adapt to different content",
-    content: <ReactMarkdown>{content3["EN"]}</ReactMarkdown> ,
+    content: <ReactMarkdown>{content2["EN"]}</ReactMarkdown> ,
     pic: `./pictures/memoria/section3.gif`, 
   },
   DE:{
