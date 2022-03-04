@@ -17,7 +17,7 @@ EN:`Since my studies, I have been interested in educational or knowledge platfor
 With my newly acquired knowledge, I thus wanted to **develop learning platforms, concrete projects that could help me and other inexperienced developers to program better.**
 Here are my most extensive projects.`,
 DE:`Seit meinem Studium interessiere ich mich für Bildungs- oder Wissensplattformen und verfasse beispielsweise regelmäßig Beiträge auf *Wikipedia*. Des Weiteren hatte ich in meinem ersten Beruf die Gelegenheit, einige solcher Plattformen zu entwerfen.
-Mit meinem neu erworbenen Wissen wollte ich somit, **Lernplattformen entwickeln**, konkrete Projekte, die mir und anderen unerfahrenen Entwicklern helfen könnten, besser zu programmieren.
+Mit meinem neu erworbenen Wissen wollte ich somit **Lernplattformen entwickeln**, die mir und anderen unerfahrenen Entwicklern helfen könnten, besser zu programmieren.
 Hier sind meine umfangreichsten Projekte.`,
 }}
 </SetTranslate>)

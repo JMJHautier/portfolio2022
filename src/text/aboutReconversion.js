@@ -41,7 +41,7 @@ EN:`**To acquire the basics**, I attended two boot camps from January to October
 &#707;  at [*O'clock coding school*](https://oclock.io/) to specialise in *front-end* (*React* and *CSS*).
 `,
 DE:`**Um die Grundlagen zu erwerben**, habe ich von Januar bis Oktober 2021 zwei *Bootcamps* besucht: 
-&#707; an der [*WBS coding school*](https://www.wbscodingschool.com/), um die Grundlagen in Javascript, Front und Back zu erwerben.
+&#707; an der [*WBS coding school*](https://www.wbscodingschool.com/), um die Grundlagen in Javascript, Front und Back zu erlernen.
 &#707; an der [*O'clock coding school*](https://oclock.io/), um mich auf Front-End (React und CSS) zu spezialisieren.
 `,
 }}

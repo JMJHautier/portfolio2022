@@ -29,7 +29,7 @@ const content2 = {
   **Displaying all this content in the best possible way** on both desktop and mobile devices is a **challenge**. I used *media queries*, relative units and the latest CSS rules like *clamp()* to make all types of content easy to read while keeping the code clean. 
   `,
   DE:`Der *Markdown-Editor* erlaubt es, kreativ zu sein - *Code Snippets*, aber auch Bilder sowie Gifs sind möglich.  \n
-  All diese Inhalte sowohl auf dem Desktop als auch auf mobilen Geräten bestmöglich anzuzeigen, ist eine Herausforderung. Ich habe eine Mischung aus *Media Queries*, relativen Einheiten und den neuesten CSS-Rules wie *clamp()* verwendet, um alle Arten von Inhalten leicht lesbar zu machen und gleichzeitig den Code sauber zu erhalten. 
+  All diese Inhalte sowohl auf dem Desktop als auch auf mobilen Geräten bestmöglich anzuzeigen, ist eine Herausforderung. Ich habe eine Mischung aus *Media Queries*, relativen Einheiten und den neusten CSS-Rules wie *clamp()* verwendet, um alle Arten von Inhalten leicht lesbar zu machen und gleichzeitig den Code sauber zu erhalten. 
   `,
 
 }
