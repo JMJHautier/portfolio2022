@@ -54,6 +54,7 @@
     font-size: vars.$fontSize-title;
   }
   & h3 {
+    cursor: pointer;
     color: vars.$color-text-important;
     &:first-letter {
       padding-left: 3px;
