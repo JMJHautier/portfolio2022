@@ -19,5 +19,5 @@ export const projects = {
 export const contact = {
   FR: "Contact",
   EN: "Contact",
-  DE: "Kontact"
+  DE: "Kontakt"
 }
