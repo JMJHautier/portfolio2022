@@ -20,7 +20,10 @@ const Project = ({tabs, projectTitle, language})=>{
   const [activeTab, setActiveTab] = useState(tabs[0])
   const [inactiveTabs, setInactiveTabs] = useState([tab2, tab3, tab4])
   const container = useRef();
-
+  const focusProject = () => {
+    console.log(container.current)
+    container.current.scrollIntoView(true)
+  }
   useEffect(()=> {
     setTransitionIsReset(false)
     setTimeout(()=> {
@@ -39,7 +42,7 @@ const Project = ({tabs, projectTitle, language})=>{
   }, [tabs, language])
 
 return <div className="project" tabIndex="-1" ref={container}> 
-    <div className="project__container"> 
+    <div className="project__container" > 
 
       <div className="project__left-side">
           {toggled&&<h2><TransparentButton onClick={switchToggle}>{back}</TransparentButton></h2>}
@@ -48,13 +51,13 @@ return <div className="project" tabIndex="-1" ref={container}>
       </div>
       <div className="project__right-side">
       <CSSTransition in={toggled} timeout={800} classNames={{enter:"illustration-enter", enterActive:"illustration-enter-active", exit:"illustration-exit", exitActive:"illustration-exit-active"}} unmountOnExit>
-        <TabSystem transitionIsReset={transitionIsReset} activeTab={activeTab} setActiveTab={setActiveTab} tabs={inactiveTabs} setTabs={setInactiveTabs} /> 
+        <TabSystem container={container.current} transitionIsReset={transitionIsReset} activeTab={activeTab} setActiveTab={setActiveTab} tabs={inactiveTabs} setTabs={setInactiveTabs} /> 
       </CSSTransition>
       <CSSTransition in={!toggled} timeout={800} classNames={{enter:"illustration-enter", enterActive:"illustration-enter-active", exit:"illustration-exit", exitActive:"illustration-exit-active"}} unmountOnExit>
 
         <div> 
           {presentationContent} <br /> <br />
-          <TransparentButton onClick={()=>{container.current.focus();switchToggle(); }}>{learnMore}</TransparentButton>
+          <TransparentButton onClick={()=>{focusProject(); switchToggle(); }}>{learnMore}</TransparentButton>
 
           </div> 
 

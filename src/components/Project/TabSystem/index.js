@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import ActiveTab from "./ActiveTab"
 import Tabs from "./Tabs"
 
-const TabSystem = ({activeTab, setActiveTab, tabs, setTabs, transitionIsReset})=>{
+const TabSystem = ({container, activeTab, setActiveTab, tabs, setTabs, transitionIsReset})=>{
 
   const previousActiveTab = usePrevious(activeTab)
   const handleChangeTab = (event) => {
@@ -29,7 +29,7 @@ const TabSystem = ({activeTab, setActiveTab, tabs, setTabs, transitionIsReset})=
 
 return <div className="container__tab">
   <ActiveTab transitionIsReset={transitionIsReset} tab={activeTab} />
-  <Tabs tabs={tabs} setTabs={setTabs} handleChangeTab={handleChangeTab} />
+  <Tabs container={container} tabs={tabs} setTabs={setTabs} handleChangeTab={handleChangeTab} />
   </div>
 }
 export default TabSystem
