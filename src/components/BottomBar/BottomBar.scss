@@ -1,0 +1,36 @@
+@use "../../styles/vars";
+
+.bottomBar {
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    & a {
+      color: vars.$color-text-important;
+    }
+    & li:hover {
+      transform: scale(0.9);
+      transition: transform 0.75s;
+    }
+    & a:visited {
+      color: vars.$color-text-important;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: vars.$color-bg-dark;
+  }
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}

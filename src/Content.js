@@ -10,6 +10,7 @@ import Project from './components/Project';
 import Projects from './components/Projects';
 import Welcome from './components/Welcome';
 import { LanguageContext } from './context/LanguageContext';
+import BottomBar from './components/BottomBar';
 const Content = ({isVisible, boundY, addObserver, ratio, currentSection})=>{
   const {setLanguage, language} = useContext(LanguageContext)
 
@@ -44,7 +45,7 @@ return (
   <Contact />
   </section>
   {!isVisible["home"]&&<Up section={section} boundY={boundY} ratio={ratio} currentSection={currentSection}/>}
-
+  <BottomBar />
   <Down section={section} ratio={ratio} currentSection={currentSection}/>
   </>
 )
