@@ -38,13 +38,11 @@ return <div className="bottomBar">
       <a target="_blank" href="https://github.com/JMJHautier/" rel="noreferrer">
         <Icon width="40px" icon="carbon:logo-github" />
       </a>
+    </li>
     <li>
         <a target="_blank" href={CVLink} rel="noreferrer">
           <Icon width="40px" icon="carbon:user-profile" />
         </a>
-    </li>
-
-
     </li>
     <li>
       <a target="_blank" href="https://www.linkedin.com/in/jean-hautier/" rel="noreferrer">
