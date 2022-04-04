@@ -21,10 +21,14 @@
     & h2 {
       font-size: calc(60% + 5vmin);
     }
+    @media only screen and (orientation:portrait) {
+      width:80%;
+    }
   }
   & .welcome__image {
     position: relative;
     width: clamp(250px, 25%, 500px);
+
     margin: clamp(1.5rem, 0.5vw, 2rem);
     z-index: 1;
     & img {
@@ -33,6 +37,10 @@
     &:hover {
       transform: scale(0.95);
       transition: transform 1s;
+    }
+    @media only screen and (orientation:portrait) {
+      width: clamp(300px, 35%, 500px);
+      margin-top:150px;
     }
   }
   .welcome__image:after {
