@@ -21,6 +21,11 @@
 
 .AboutReconversion__picture {
   @extend %picture;
+  cursor:pointer;
+  &:hover {
+    transform: scale(0.95);
+    transition: transform 1s;
+  }
   & img {
     width: 90%;
   }

@@ -12,7 +12,7 @@ return <div className="welcome">
         </p>
     </div>
     <div className="welcome__image">
-      <img  src="/pictures/JeanHautier.JPG" alt="Headshot of Jean Hautier"/>
+      <a href="#about"><img  src="/pictures/JeanHautier.JPG" alt="Headshot of Jean Hautier" /> </a>
     </div>
   </div>
   <div className="pushUp">

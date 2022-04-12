@@ -20,7 +20,7 @@ return (
 
   <div className="AboutReconversion__container">
 
-    <div className="AboutReconversion__picture"> 
+    <div className="AboutReconversion__picture" onClick={setToggle}> 
       <img src="./pictures/reconversion.png" alt=""/>
     </div>
     <div className={contentClass}>

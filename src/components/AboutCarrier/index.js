@@ -26,7 +26,7 @@ return (
           {toggled?back:learnMore}
           </TransparentButton>
       </div>
-      <div className="AboutCarrier__picture"> 
+      <div className="AboutCarrier__picture" onClick={setToggle}> 
         <img src="./pictures/AboutCarrier_short.jpg" alt="Wideshot of a UN meeting"/>
       </div>
 

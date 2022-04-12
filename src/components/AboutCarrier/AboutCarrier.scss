@@ -46,6 +46,7 @@
     flex-grow: 1;
     position: relative;
     z-index: 1;
+    cursor:pointer;
     &:hover {
       transform: scale(0.95);
       transition: transform 1s;
